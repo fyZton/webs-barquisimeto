@@ -1,262 +1,521 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grupo Dental Loor | Odontología para toda la familia en Barquisimeto</title>
-  <meta name="description" content="Odontología general, ortodoncia, implantes, diseño de sonrisa y odontopediatría en el centro de Barquisimeto, frente al C.C. Capital Plaza. Aceptamos Cashea y Pago Móvil. Agenda tu cita por WhatsApp.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Grupo Dental Loor | Odontología para toda la familia">
-  <meta property="og:description" content="Cuidamos tu salud bucal y la de toda tu familia. Frente al C.C. Capital Plaza, Barquisimeto. Aceptamos Cashea y Pago Móvil.">
-  <meta property="og:locale" content="es_VE">
-  <meta name="theme-color" content="#0e3a47">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230e3a47'/%3E%3Cpath d='M20 18c-5 0-8 4-8 9 0 6 3 10 4 16 1 5 2 9 5 9s3-5 4-9c1-3 2-5 3-5h8c1 0 2 2 3 5 1 4 1 9 4 9s4-4 5-9c1-6 4-10 4-16 0-5-3-9-8-9-4 0-6 2-10 2s-6-2-10-2z' fill='%23f5f1e8'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            pino: { DEFAULT: '#0e3a47', 700: '#14505f', 50: '#e8f1f1' },
-            menta: { DEFAULT: '#7fcbb8', 100: '#dff2ec' },
-            crema: '#f5f1e8',
-            arena: '#c9a66b'
-          },
-          fontFamily: {
-            display: ['Fraunces', 'Georgia', 'serif'],
-            sans: ['Outfit', 'system-ui', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    html { scroll-behavior: smooth; }
-    .grano { background-image: radial-gradient(circle at 85% 15%, rgba(127,203,184,.25), transparent 45%), radial-gradient(circle at 10% 90%, rgba(201,166,107,.18), transparent 40%); }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grupo Dental Loor · Odontología para toda la familia en Barquisimeto</title>
+<meta name="description" content="Clínica dental frente al C.C. Capital Plaza, Barquisimeto. Odontología general, ortodoncia, implantes y prótesis, diseño de sonrisa y odontopediatría. Aceptamos Cashea y Pago Móvil. Escríbenos por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_VE">
+<meta property="og:title" content="Grupo Dental Loor · Barquisimeto">
+<meta property="og:description" content="Odontología general, ortodoncia, implantes y prótesis frente al C.C. Capital Plaza. Lunes a sábado. Aceptamos Cashea y Pago Móvil.">
+<meta property="og:image" content="https://fyzton.github.io/webs-barquisimeto/grupo-dental-loor/img/hero.webp">
+<meta name="theme-color" content="#0A2540">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A2540'/%3E%3Ctext x='32' y='47' text-anchor='middle' font-family='Libre Baskerville,Georgia,Times New Roman,serif' font-weight='700' font-size='42' fill='%23fff'%3EL%3C/text%3E%3Crect x='18' y='53' width='28' height='3' rx='1.5' fill='%230077E6'/%3E%3C/svg%3E">
+<link rel="preload" as="image" href="img/hero-mobile.webp" media="(max-width: 1023px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero.webp" media="(min-width: 1024px)" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+<!-- Libre Baskerville 700 solo para el rótulo "LOOR" (subconjunto L-O-R) -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&text=LOR&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { brand:'#0077E6', brandd:'#006FD6', deep:'#0A2540', accent:'#5BB4FF', surface:'#EEF6FE', ink:'#1F2A37', muted:'#5B6B7D', wa:'#25D366', cashea:'#FFD400' },
+  fontFamily: { display:['"Plus Jakarta Sans"','system-ui','sans-serif'], sans:['Inter','system-ui','sans-serif'] },
+  boxShadow: { card:'0 8px 24px rgba(16,42,84,.08)' }
+} } }
+</script>
+<style>
+  body{font-family:Inter,system-ui,sans-serif;color:#1F2A37;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .h1,.h2,.h3{font-family:"Plus Jakarta Sans",system-ui,sans-serif;font-weight:700;letter-spacing:-.02em}
+  .h1{font-size:34px;line-height:1.1}
+  .h2{font-size:26px;line-height:1.2}
+  .h3{font-size:19px;line-height:1.3;letter-spacing:-.01em}
+  .eyebrow{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#006FD6}
+  .wm{display:inline-block;text-align:center}
+  .wm-top{display:block;font-size:9.5px;font-weight:600;line-height:1;text-transform:uppercase;letter-spacing:.2em;margin-right:-.2em}
+  .wm-name{display:block;margin-top:4px;font-family:"Libre Baskerville",Georgia,"Times New Roman",serif;font-weight:700;font-size:27px;line-height:1;letter-spacing:.08em;margin-right:-.08em}
+  .lead{font-size:17px;line-height:1.65}
+  @media (min-width:1024px){
+    body{font-size:17px;line-height:1.7}
+    .h1{font-size:52px;line-height:1.08}
+    .h2{font-size:38px;line-height:1.15}
+    .h3{font-size:22px}
+    .lead{font-size:19px}
+    section[id]{scroll-margin-top:104px}
+  }
+  :where(.ic){width:22px;height:22px}
+  .ic{fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}
+  :where(.icf){width:22px;height:22px}
+  .icf{fill:currentColor;flex:none}
+  :where(.btn){display:inline-flex;height:52px;padding:0 1.5rem}
+  .btn{align-items:center;justify-content:center;gap:.5rem;border-radius:12px;font-size:16px;font-weight:600;line-height:1;transition:background-color .15s,color .15s,border-color .15s,transform .12s}
+  @media (min-width:1024px){:where(.btn){height:48px}}
+  .btn:active{transform:scale(.97)}
+  .btn-wa{background:#25D366;color:#0A2540}
+  .btn-brand{background:#006FD6;color:#fff}
+  @media (hover:hover) and (pointer:fine){
+    .btn-wa:hover{background:#1FBF5B}
+    .btn-brand:hover{background:#0A2540}
+    .btn-ghost-light:hover{background:rgba(255,255,255,.12)}
+    .btn-ghost:hover{background:#EEF6FE}
+    .lnk:hover{color:#006FD6}
+    .tile:hover{background:#12355C}
+  }
+  @media (hover:hover) and (pointer:fine) and (min-width:1024px){
+    .hero-sec:hover{background:#fff}
+  }
+  .hero-in{animation:heroIn 560ms cubic-bezier(0.23,1,0.32,1) both}
+  @keyframes heroIn{from{opacity:0;transform:translateY(14px)}}
+  @media (prefers-reduced-motion:reduce){
+    .hero-in{animation:fadeIn 400ms ease both}
+    @keyframes fadeIn{from{opacity:0}}
+    .btn,.btn:active{transform:none;transition:background-color .15s}
+  }
+  summary{list-style:none;cursor:pointer}
+  summary::-webkit-details-marker{display:none}
+  details[open] .chev{transform:rotate(180deg)}
+</style>
 </head>
-<body class="bg-crema text-pino font-sans antialiased">
+<body class="bg-white">
 
-  <!-- Encabezado -->
-  <header class="sticky top-0 z-40 bg-crema/90 backdrop-blur border-b border-pino/10">
-    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
-      <a href="#inicio" class="flex items-center gap-2.5">
-        <!-- CONFIRMAR: logo provisional; reemplazar por el logo real -->
-        <span class="w-9 h-9 rounded-full bg-pino flex items-center justify-center" aria-hidden="true">
-          <svg viewBox="0 0 64 64" class="w-5 h-5"><path d="M20 18c-5 0-8 4-8 9 0 6 3 10 4 16 1 5 2 9 5 9s3-5 4-9c1-3 2-5 3-5h8c1 0 2 2 3 5 1 4 1 9 4 9s4-4 5-9c1-6 4-10 4-16 0-5-3-9-8-9-4 0-6 2-10 2s-6-2-10-2z" fill="#f5f1e8"/></svg>
+<!-- Iconos lineales (sprite) -->
+<svg style="position:absolute;width:0;height:0" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-nav" viewBox="0 0 24 24"><path d="M3 11 22 2l-9 19-2-8-8-2z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0L14.06 8.5A2 2 0 0 0 15.5 9.94l6.14 1.58a.5.5 0 0 1 0 .96L15.5 14.06a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z"/></symbol>
+  <symbol id="i-siren" viewBox="0 0 24 24"><path d="M7 18v-6a5 5 0 1 1 10 0v6"/><path d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z"/><path d="M21 12h1M2 12h1M12 2v1M18.5 4.5 18 5M4.93 4.93l.71.71"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2"/><path d="M2 10h20M6 15h4"/></symbol>
+  <symbol id="i-mobile" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></symbol>
+  <symbol id="i-cash" viewBox="0 0 24 24"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.5h-.01a9.5 9.5 0 0 1-4.84-1.33l-.35-.21-3.6.94.96-3.5-.23-.36a9.46 9.46 0 0 1-1.45-5.05c0-5.24 4.27-9.5 9.52-9.5 2.54 0 4.93.99 6.72 2.79a9.43 9.43 0 0 1 2.78 6.72c0 5.24-4.27 9.5-9.5 9.5zm8.08-17.58A11.36 11.36 0 0 0 12.05.58C5.75.58.63 5.7.63 12c0 2.01.53 3.98 1.53 5.71L.53 23.42l5.85-1.53a11.4 11.4 0 0 0 5.66 1.44h.01c6.3 0 11.42-5.12 11.42-11.42 0-3.05-1.19-5.92-3.35-8.08z"/></symbol>
+</svg>
+
+<!-- 1. Cabecera -->
+<header class="relative z-40 lg:fixed lg:inset-x-0 lg:top-4">
+  <div class="mx-auto max-w-[1180px] lg:px-5">
+    <div class="flex h-16 items-center justify-between border-b border-slate-100 bg-white px-5 lg:h-[72px] lg:rounded-2xl lg:border lg:px-6 lg:shadow-card">
+      <a href="#inicio" class="flex min-h-[44px] items-center gap-4" aria-label="Grupo Dental Loor, inicio">
+        <!-- Rótulo tipográfico provisional; CONFIRMAR: reemplazar por el logo oficial (isotipo del diente) cuando lo envíen -->
+        <span class="wm text-deep" aria-hidden="true">
+          <span class="wm-top">Grupo Dental</span>
+          <span class="wm-name">LOOR</span>
         </span>
-        <span class="font-display text-lg font-semibold leading-none">Grupo Dental <span class="text-pino-700">Loor</span></span>
+        <span class="hidden border-l border-slate-200 pl-4 text-[12px] leading-snug text-muted lg:block">Odontología integral<br>Barquisimeto</span>
       </a>
-      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-pino/80">
-        <a href="#servicios" class="hover:text-pino">Servicios</a>
-        <a href="#pagos" class="hover:text-pino">Formas de pago</a>
-        <a href="#ubicacion" class="hover:text-pino">Ubicación</a>
+      <nav class="hidden items-center gap-8 text-[15px] font-medium text-ink lg:flex" aria-label="Principal">
+        <a class="lnk" href="#servicios">Servicios</a>
+        <a class="lnk" href="#pagos">Formas de pago</a>
+        <a class="lnk" href="#preguntas">Preguntas</a>
+        <a class="lnk" href="#ubicacion">Ubicación</a>
       </nav>
-      <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" class="text-sm font-semibold bg-pino text-crema px-4 py-2 rounded-full hover:bg-pino-700 transition">Agendar cita</a>
+      <div class="flex items-center gap-3">
+        <a href="tel:+584245748609" class="lnk hidden items-center gap-2 text-[15px] font-semibold text-deep lg:inline-flex"><svg class="ic h-[18px] w-[18px] text-brandd"><use href="#i-phone"/></svg>(0424) 574.8609</a>
+        <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20cita." class="btn btn-brand hidden lg:inline-flex">Agenda tu cita</a>
+        <a href="tel:+584245748609" class="inline-flex h-11 items-center gap-2 rounded-xl bg-surface px-4 text-[15px] font-semibold text-deep lg:hidden"><svg class="ic h-[18px] w-[18px] text-brandd"><use href="#i-phone"/></svg>Llamar</a>
+      </div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main>
-    <!-- Hero -->
-    <section id="inicio" class="grano relative overflow-hidden">
-      <div class="max-w-6xl mx-auto px-5 pt-12 pb-16 md:pt-20 md:pb-24 grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <p class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-pino-700 bg-menta-100 px-3 py-1.5 rounded-full">Clínica dental · Centro de Barquisimeto</p>
-          <h1 class="font-display text-[2.6rem] leading-[1.05] md:text-6xl font-semibold mt-5">Grupo Dental Loor</h1>
-          <p class="text-xl md:text-2xl mt-4 text-pino/85 leading-snug">Cuidamos tu salud bucal <span class="italic font-display text-pino-700">y la de toda tu familia.</span></p>
-          <p class="mt-4 text-pino/70 max-w-md">Atención cálida y sin dolor, con tecnología de vanguardia. Desde una limpieza hasta implantes y ortodoncia, todo en un solo lugar.</p>
-          <div class="mt-8 flex flex-col sm:flex-row gap-3">
-            <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-semibold px-6 py-4 rounded-full shadow-lg shadow-[#25D366]/30 hover:brightness-95 transition">
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
-              Escríbenos por WhatsApp
-            </a>
-            <a href="#servicios" class="inline-flex items-center justify-center px-6 py-4 rounded-full border border-pino/20 font-semibold hover:bg-pino/5 transition">Ver servicios</a>
-          </div>
-          <p class="mt-6 text-sm text-pino/70 flex flex-wrap gap-x-4 gap-y-1">
-            <span>✓ Aceptamos <strong class="text-pino">Cashea</strong></span>
-            <span>✓ <strong class="text-pino">Pago Móvil</strong></span>
-            <span>✓ Débito y divisas</span>
-          </p>
+<main>
+<!-- 2. Hero -->
+<section id="inicio" class="relative lg:bg-surface lg:pb-[156px] lg:pt-[136px]">
+  <div class="lg:mx-auto lg:grid lg:max-w-[1180px] lg:grid-cols-[55fr_45fr] lg:items-center lg:gap-14 lg:px-5">
+    <div class="relative lg:order-2">
+      <div class="relative h-[600px] overflow-hidden lg:h-[560px] lg:rounded-[24px]">
+        <picture>
+          <source media="(max-width: 1023px)" srcset="img/hero-mobile.webp" width="750" height="1240">
+          <img src="img/hero.webp" width="1600" height="1200" fetchpriority="high" alt="Paciente sonriendo sentada en el sillón dental mientras conversa con su odontólogo (imagen ilustrativa)" class="absolute inset-0 h-full w-full object-cover object-top lg:object-[44%_center]">
+        </picture>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0A2540] via-[#0A2540]/75 via-50% to-transparent to-[72%] lg:hidden"></div>
+      </div>
+      <div class="absolute -left-10 bottom-10 hidden w-[272px] rounded-2xl bg-white p-5 shadow-card lg:block">
+        <div class="flex items-center gap-3">
+          <span class="grid h-10 w-10 place-items-center rounded-full bg-surface text-brandd"><svg class="ic h-5 w-5"><use href="#i-clock"/></svg></span>
+          <span class="font-display text-[16px] font-bold text-deep">Horario de atención</span>
         </div>
+        <dl class="mt-4 space-y-2 text-[15px]">
+          <div class="flex justify-between gap-3"><dt class="text-muted">Lun a vie</dt><dd class="font-semibold text-ink">8:00 am – 5:00 pm</dd></div>
+          <div class="flex justify-between gap-3"><dt class="text-muted">Sábado</dt><dd class="font-semibold text-ink">8:00 am – 1:00 pm</dd></div>
+        </dl>
+      </div>
+      <div class="absolute right-5 top-5 hidden items-center gap-2 rounded-full bg-cashea px-4 py-2 text-[14px] font-bold text-deep shadow-card lg:inline-flex">
+        <svg class="ic h-[18px] w-[18px]"><use href="#i-cal"/></svg>Aceptamos Cashea
+      </div>
+    </div>
 
-        <!-- Ilustración (no es foto del local) -->
-        <div class="relative mx-auto w-full max-w-sm md:max-w-md" aria-hidden="true">
-          <div class="aspect-square rounded-[2.5rem] bg-pino relative overflow-hidden rotate-2">
-            <div class="absolute -top-10 -right-10 w-48 h-48 rounded-full bg-menta/30"></div>
-            <div class="absolute -bottom-16 -left-10 w-56 h-56 rounded-full bg-arena/20"></div>
-            <svg viewBox="0 0 64 64" class="absolute inset-0 m-auto w-1/2 h-1/2 -rotate-2 drop-shadow-xl"><path d="M20 18c-5 0-8 4-8 9 0 6 3 10 4 16 1 5 2 9 5 9s3-5 4-9c1-3 2-5 3-5h8c1 0 2 2 3 5 1 4 1 9 4 9s4-4 5-9c1-6 4-10 4-16 0-5-3-9-8-9-4 0-6 2-10 2s-6-2-10-2z" fill="#f5f1e8"/><path d="M22 24c2-1.5 4-1.5 6-.5" stroke="#7fcbb8" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
-            <span class="absolute top-[22%] right-[24%] text-menta text-2xl">✦</span>
-            <span class="absolute bottom-[26%] left-[20%] text-arena text-lg">✦</span>
-          </div>
-          <div class="absolute -bottom-5 -left-3 md:-left-8 bg-white rounded-2xl shadow-xl px-4 py-3 -rotate-2">
-            <p class="text-[11px] uppercase tracking-wider text-pino/60 font-semibold">Abierto</p>
-            <p class="text-sm font-semibold">Lun–Vie 8 am – 5 pm</p>
-            <p class="text-sm font-semibold">Sáb 8 am – 1 pm</p>
-          </div>
+    <div class="hero-in absolute inset-x-0 bottom-0 px-5 pb-8 text-white lg:static lg:order-1 lg:p-0 lg:text-ink">
+      <p class="inline-flex items-center gap-2 rounded-full bg-deep/55 px-3 py-1.5 text-[13px] font-medium backdrop-blur-sm lg:bg-white lg:text-deep lg:shadow-card">
+        <svg class="ic h-4 w-4 lg:text-brandd"><use href="#i-pin"/></svg>Frente al C.C. Capital Plaza · Barquisimeto
+      </p>
+      <h1 class="h1 mt-4 max-w-[600px] lg:mt-6 lg:text-deep">Tu sonrisa y la de tu familia, en buenas manos</h1>
+      <p class="mt-3 max-w-[520px] text-white/90 lg:lead lg:mt-5 lg:text-muted"><span class="lg:hidden">Ortodoncia, implantes, prótesis y más. Sin dolor y con facilidades de pago.</span><span class="hidden lg:inline">Odontología general, ortodoncia, implantes y prótesis. Te explicamos todo claro, sin dolor y con facilidades de pago.</span></p>
+      <div class="mt-6 flex flex-col gap-3 sm:flex-row lg:mt-8">
+        <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20cita." class="btn btn-wa w-full sm:w-auto"><svg class="icf"><use href="#i-wa"/></svg>Escríbenos por WhatsApp</a>
+        <a href="tel:+584245748609" class="btn btn-ghost-light w-full border border-white/70 text-white sm:w-auto hero-sec lg:border-deep/20 lg:text-deep"><svg class="ic h-5 w-5"><use href="#i-phone"/></svg>Llamar</a>
+      </div>
+      <ul class="mt-8 hidden flex-wrap gap-x-6 gap-y-2 text-[15px] text-muted lg:flex">
+        <li class="inline-flex items-center gap-2"><svg class="ic h-[18px] w-[18px] text-brand"><use href="#i-check"/></svg>Niños y adultos</li>
+        <li class="inline-flex items-center gap-2"><svg class="ic h-[18px] w-[18px] text-brand"><use href="#i-check"/></svg>Emergencias odontológicas</li>
+        <li class="inline-flex items-center gap-2"><svg class="ic h-[18px] w-[18px] text-brand"><use href="#i-check"/></svg>Cashea y Pago Móvil</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Barra de acciones (móvil) -->
+<nav class="grid grid-cols-3 border-b border-slate-100 bg-white lg:hidden" aria-label="Acciones rápidas">
+  <a href="https://www.google.com/maps/search/?api=1&query=Edif.%20Oropan%2C%20Av.%2020%20entre%20Av.%20Vargas%20y%20Calle%2019%2C%20Barquisimeto" class="flex h-[76px] flex-col items-center justify-center gap-1.5 text-[14px] font-semibold text-deep"><svg class="ic text-brandd"><use href="#i-nav"/></svg>Cómo llegar</a>
+  <a href="tel:+584245748609" class="flex h-[76px] flex-col items-center justify-center gap-1.5 border-x border-slate-100 text-[14px] font-semibold text-deep"><svg class="ic text-brandd"><use href="#i-phone"/></svg>Llamar</a>
+  <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20cita." class="flex h-[76px] flex-col items-center justify-center gap-1.5 text-[14px] font-semibold text-deep"><svg class="icf text-[#128C4B]"><use href="#i-wa"/></svg>WhatsApp</a>
+</nav>
+
+<!-- 4. Accesos rápidos -->
+<section class="bg-white px-5 pt-6 lg:px-0 lg:pt-0" aria-label="Accesos rápidos">
+  <div class="mx-auto grid max-w-[1180px] gap-3 lg:relative lg:z-10 lg:-mt-[100px] lg:grid-cols-3 lg:gap-5 lg:px-5">
+    <a href="#servicios" class="tile flex items-center gap-4 rounded-2xl bg-deep p-5 text-white shadow-card transition-colors lg:flex-col lg:items-start lg:p-7">
+      <span class="grid h-12 w-12 flex-none place-items-center rounded-full bg-white/10"><svg class="ic"><use href="#i-users"/></svg></span>
+      <span class="flex-1">
+        <span class="h3 block">Para toda la familia</span>
+        <span class="mt-1 block text-[15px] leading-snug text-white/75">Odontopediatría y odontología general, para grandes y chamos.</span>
+      </span>
+      <svg class="ic h-5 w-5 text-accent lg:hidden"><use href="#i-arrow"/></svg>
+    </a>
+    <a href="#servicios" class="tile flex items-center gap-4 rounded-2xl bg-deep p-5 text-white shadow-card transition-colors lg:flex-col lg:items-start lg:p-7">
+      <span class="grid h-12 w-12 flex-none place-items-center rounded-full bg-white/10"><svg class="ic"><use href="#i-sparkle"/></svg></span>
+      <span class="flex-1">
+        <span class="h3 block">Estética y diseño de sonrisa</span>
+        <span class="mt-1 block text-[15px] leading-snug text-white/75">Diseño de sonrisa, ortodoncia e implantes.</span>
+      </span>
+      <svg class="ic h-5 w-5 text-accent lg:hidden"><use href="#i-arrow"/></svg>
+    </a>
+    <a href="https://wa.me/584245748609?text=Hola%2C%20tengo%20una%20emergencia%20dental.%20%C2%BFMe%20pueden%20atender%3F" class="tile flex items-center gap-4 rounded-2xl bg-deep p-5 text-white shadow-card transition-colors lg:flex-col lg:items-start lg:p-7">
+      <span class="grid h-12 w-12 flex-none place-items-center rounded-full bg-white/10"><svg class="ic"><use href="#i-siren"/></svg></span>
+      <span class="flex-1">
+        <span class="h3 block">Emergencias odontológicas</span>
+        <span class="mt-1 block text-[15px] leading-snug text-white/75">¿Un dolor que no espera? Escríbenos ya.</span>
+      </span>
+      <svg class="ic h-5 w-5 text-accent lg:hidden"><use href="#i-arrow"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- 5. Bienvenida -->
+<section class="bg-white py-[72px] lg:py-[112px]">
+  <div class="mx-auto grid max-w-[1180px] items-center gap-10 px-5 lg:grid-cols-2 lg:gap-16">
+    <div class="relative">
+      <img src="img/bienvenida.webp" width="800" height="600" loading="lazy" alt="Paciente riendo en el sillón mientras una odontóloga con guantes azules le revisa los dientes (imagen ilustrativa)" class="aspect-[4/3] w-full rounded-[24px] object-cover">
+      <div class="absolute -bottom-6 right-4 flex items-center gap-3 rounded-2xl bg-white p-4 pr-5 shadow-card lg:-right-6">
+        <span class="grid h-10 w-10 place-items-center rounded-full bg-surface text-brandd"><svg class="ic h-5 w-5"><use href="#i-pin"/></svg></span>
+        <span class="leading-tight">
+          <span class="block text-[15px] font-semibold text-deep">Edif. Oropan, piso 1</span>
+          <span class="block text-[13px] text-muted">Frente al C.C. Capital Plaza</span>
+        </span>
+      </div>
+    </div>
+    <div class="pt-4 lg:pt-0">
+      <p class="eyebrow">Bienvenido</p>
+      <h2 class="h2 mt-3 text-deep">Cuidamos la salud bucal de toda tu familia</h2>
+      <p class="mt-5 text-muted">En Grupo Dental Loor nos dedicamos al cuidado integral de tu salud bucal y la de los tuyos: desde la primera consulta de los más pequeños hasta implantes, prótesis y diseño de sonrisa.</p>
+      <p class="mt-4 text-muted">Trabajamos con tecnología de vanguardia y un trato cálido, para que vengas tranquilo. Nos consigues en pleno centro de Barquisimeto, en la Av. 20, justo frente al C.C. Capital Plaza.</p>
+      <ul class="mt-7 grid gap-3 sm:grid-cols-2">
+        <li class="flex items-center gap-3 font-medium text-ink"><span class="grid h-7 w-7 place-items-center rounded-full bg-surface text-brandd"><svg class="ic h-4 w-4"><use href="#i-check"/></svg></span>Atención sin dolor</li>
+        <li class="flex items-center gap-3 font-medium text-ink"><span class="grid h-7 w-7 place-items-center rounded-full bg-surface text-brandd"><svg class="ic h-4 w-4"><use href="#i-check"/></svg></span>Niños y adultos</li>
+        <li class="flex items-center gap-3 font-medium text-ink"><span class="grid h-7 w-7 place-items-center rounded-full bg-surface text-brandd"><svg class="ic h-4 w-4"><use href="#i-check"/></svg></span>Emergencias odontológicas</li>
+        <li class="flex items-center gap-3 font-medium text-ink"><span class="grid h-7 w-7 place-items-center rounded-full bg-surface text-brandd"><svg class="ic h-4 w-4"><use href="#i-check"/></svg></span>Lunes a sábado</li>
+      </ul>
+      <a href="#servicios" class="btn btn-ghost mt-8 w-full border border-deep/15 text-deep sm:w-auto">Ver servicios<svg class="ic h-5 w-5"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Servicios -->
+<section id="servicios" class="bg-surface py-[72px] lg:py-[112px]">
+  <div class="mx-auto max-w-[1180px] px-5">
+    <div class="max-w-[640px]">
+      <p class="eyebrow">Servicios</p>
+      <h2 class="h2 mt-3 text-deep">Todo lo que tu sonrisa necesita, en un solo lugar</h2>
+      <p class="mt-4 text-muted">Del chequeo de rutina a los tratamientos más completos. Si tienes dudas sobre cuál es el tuyo, escríbenos y te orientamos.</p>
+    </div>
+    <div class="mt-10 grid gap-5 md:grid-cols-2 lg:mt-14 lg:grid-cols-3 lg:gap-7">
+      <article class="flex flex-col overflow-hidden rounded-2xl bg-white shadow-card">
+        <img src="img/servicio-general.webp" width="800" height="500" loading="lazy" alt="Odontólogo revisando la boca de un paciente con espejo y explorador (imagen ilustrativa)" class="aspect-[16/10] w-full object-cover">
+        <div class="flex flex-1 flex-col p-6">
+          <h3 class="h3 text-deep">Odontología general</h3>
+          <p class="mt-2 text-[15px] leading-relaxed text-muted">Limpieza, flúor, resinas y tratamiento de caries y encías para mantener tu boca sana.</p>
+          <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n%20sobre%20odontolog%C3%ADa%20general." class="lnk mt-auto inline-flex min-h-[44px] items-center gap-2 pt-4 font-semibold text-brandd">Pregúntanos<svg class="ic h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="flex flex-col overflow-hidden rounded-2xl bg-white shadow-card">
+        <img src="img/servicio-ortodoncia.webp" width="800" height="500" loading="lazy" alt="Adolescente con brackets sonriendo en el sillón dental con el pulgar arriba (imagen ilustrativa)" class="aspect-[16/10] w-full object-cover">
+        <div class="flex flex-1 flex-col p-6">
+          <h3 class="h3 text-deep">Ortodoncia</h3>
+          <p class="mt-2 text-[15px] leading-relaxed text-muted">Dientes alineados y una mordida correcta, para chamos, jóvenes y adultos.</p>
+          <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n%20sobre%20ortodoncia." class="lnk mt-auto inline-flex min-h-[44px] items-center gap-2 pt-4 font-semibold text-brandd">Pregúntanos<svg class="ic h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="flex flex-col overflow-hidden rounded-2xl bg-white shadow-card">
+        <img src="img/servicio-implantes.webp" width="800" height="500" loading="lazy" alt="Modelo dental que muestra un implante entre dos dientes naturales (imagen ilustrativa)" class="aspect-[16/10] w-full object-cover">
+        <div class="flex flex-1 flex-col p-6">
+          <h3 class="h3 text-deep">Implantes y prótesis</h3>
+          <p class="mt-2 text-[15px] leading-relaxed text-muted">Implantes, prótesis y rehabilitación oral para recuperar los dientes que perdiste y volver a comer y sonreír con confianza.</p>
+          <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n%20sobre%20implantes%20y%20pr%C3%B3tesis." class="lnk mt-auto inline-flex min-h-[44px] items-center gap-2 pt-4 font-semibold text-brandd">Pregúntanos<svg class="ic h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="flex flex-col overflow-hidden rounded-2xl bg-white shadow-card">
+        <img src="img/servicio-sonrisa.webp" width="800" height="500" loading="lazy" alt="Primer plano de una mujer sonriendo con dientes blancos y naturales (imagen ilustrativa)" class="aspect-[16/10] w-full object-cover object-[center_30%]">
+        <div class="flex flex-1 flex-col p-6">
+          <h3 class="h3 text-deep">Diseño de sonrisa</h3>
+          <p class="mt-2 text-[15px] leading-relaxed text-muted">Mejoramos la forma, el color y la armonía de tus dientes para una sonrisa natural.</p>
+          <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n%20sobre%20dise%C3%B1o%20de%20sonrisa." class="lnk mt-auto inline-flex min-h-[44px] items-center gap-2 pt-4 font-semibold text-brandd">Pregúntanos<svg class="ic h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="flex flex-col overflow-hidden rounded-2xl bg-white shadow-card">
+        <img src="img/servicio-ninos.webp" width="800" height="500" loading="lazy" alt="Odontóloga revisando con calma los dientes de un niño en el sillón (imagen ilustrativa)" class="aspect-[16/10] w-full object-cover">
+        <div class="flex flex-1 flex-col p-6">
+          <h3 class="h3 text-deep">Odontopediatría</h3>
+          <p class="mt-2 text-[15px] leading-relaxed text-muted">Consultas pensadas para los más pequeños de la casa, con paciencia y cariño.</p>
+          <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n%20sobre%20odontopediatr%C3%ADa." class="lnk mt-auto inline-flex min-h-[44px] items-center gap-2 pt-4 font-semibold text-brandd">Pregúntanos<svg class="ic h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="flex flex-col overflow-hidden rounded-2xl bg-white shadow-card">
+        <img src="img/servicio-emergencias.webp" width="800" height="500" loading="lazy" alt="Mano con guante sosteniendo espejo e instrumental dental (imagen ilustrativa)" class="aspect-[16/10] w-full object-cover">
+        <div class="flex flex-1 flex-col p-6">
+          <h3 class="h3 text-deep">Emergencias y extracciones</h3>
+          <p class="mt-2 text-[15px] leading-relaxed text-muted">¿Dolor de muela que no espera? Escríbenos y buscamos atenderte lo antes posible.</p>
+          <a href="https://wa.me/584245748609?text=Hola%2C%20tengo%20una%20emergencia%20dental.%20%C2%BFMe%20pueden%20atender%3F" class="lnk mt-auto inline-flex min-h-[44px] items-center gap-2 pt-4 font-semibold text-brandd">Pregúntanos<svg class="ic h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+    <div class="mt-10 flex flex-wrap items-center gap-2 lg:mt-12">
+      <span class="mr-2 text-[15px] font-semibold text-deep">También atendemos:</span>
+      <span class="rounded-full border border-brand/20 bg-white px-3.5 py-1.5 text-[14px] text-ink">Limpieza dental</span>
+      <span class="rounded-full border border-brand/20 bg-white px-3.5 py-1.5 text-[14px] text-ink">Aplicación de flúor</span>
+      <span class="rounded-full border border-brand/20 bg-white px-3.5 py-1.5 text-[14px] text-ink">Cambio de resinas</span>
+      <span class="rounded-full border border-brand/20 bg-white px-3.5 py-1.5 text-[14px] text-ink">Caries</span>
+      <span class="rounded-full border border-brand/20 bg-white px-3.5 py-1.5 text-[14px] text-ink">Gingivitis</span>
+      <span class="rounded-full border border-brand/20 bg-white px-3.5 py-1.5 text-[14px] text-ink">Odontología restauradora</span>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Banda CTA -->
+<section class="relative overflow-hidden bg-deep">
+  <img src="img/banda-consultorio.webp" width="1400" height="936" loading="lazy" alt="" class="absolute inset-0 h-full w-full object-cover">
+  <div class="absolute inset-0 bg-deep/[.86]"></div>
+  <div class="relative mx-auto max-w-[1180px] px-5 py-[72px] text-center lg:py-[104px]">
+    <p class="mb-4 font-display text-[15px] font-bold tracking-wide text-accent lg:text-[17px]">#TuSonrisaNosMueve</p>
+    <h2 class="h2 mx-auto max-w-[720px] text-white">¿Te duele una muela o quieres mejorar tu sonrisa?</h2>
+    <p class="mx-auto mt-4 max-w-[560px] text-white/80">Escríbenos y cuadramos tu cita en el horario que mejor te quede, de lunes a sábado.</p>
+    <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+      <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20cita." class="btn btn-wa"><svg class="icf"><use href="#i-wa"/></svg>Escríbenos por WhatsApp</a>
+      <a href="tel:+584245748609" class="btn btn-ghost-light border border-white/60 text-white"><svg class="ic h-5 w-5"><use href="#i-phone"/></svg>(0424) 574.8609</a>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Formas de pago -->
+<section id="pagos" class="bg-surface py-[72px] lg:py-[112px]">
+  <div class="mx-auto max-w-[1180px] px-5">
+    <div class="max-w-[640px]">
+      <p class="eyebrow">Formas de pago</p>
+      <h2 class="h2 mt-3 text-deep">Paga como te quede más cómodo</h2>
+      <p class="mt-4 text-muted">Que el pago no sea excusa para posponer tu tratamiento.</p>
+    </div>
+    <div class="mt-10 grid gap-5 lg:mt-14 lg:grid-cols-[1.15fr_1fr] lg:gap-7">
+      <div class="relative overflow-hidden rounded-2xl bg-deep p-7 text-white shadow-card lg:p-10">
+        <div class="absolute inset-y-0 left-0 w-1.5 bg-cashea"></div>
+        <span class="grid h-14 w-14 place-items-center rounded-2xl bg-white/10 text-accent"><svg class="ic h-7 w-7"><use href="#i-cal"/></svg></span>
+        <p class="mt-6 inline-flex rounded-md bg-cashea px-2.5 py-1 text-[13px] font-bold uppercase tracking-[.08em] text-deep">Aceptamos Cashea</p>
+        <h3 class="mt-2 font-display text-[26px] font-bold leading-tight tracking-tight lg:text-[32px]">Empieza hoy y paga por partes</h3>
+        <p class="mt-3 max-w-[440px] text-white/80">Con Cashea puedes arrancar tu tratamiento sin esperar a tener todo el monto. Pregúntanos cómo funciona.</p>
+        <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n%20sobre%20el%20pago%20con%20Cashea." class="btn btn-wa mt-7 w-full sm:w-auto"><svg class="icf"><use href="#i-wa"/></svg>Preguntar por Cashea</a>
+      </div>
+      <div class="grid gap-4 lg:gap-5">
+        <div class="flex items-center gap-5 rounded-2xl bg-white p-6 shadow-card">
+          <span class="grid h-14 w-14 flex-none place-items-center rounded-2xl bg-surface text-brandd"><svg class="ic h-7 w-7"><use href="#i-mobile"/></svg></span>
+          <div><h3 class="h3 text-deep">Pago Móvil</h3><p class="text-[15px] text-muted">Rápido, desde tu teléfono.</p></div>
+        </div>
+        <div class="flex items-center gap-5 rounded-2xl bg-white p-6 shadow-card">
+          <span class="grid h-14 w-14 flex-none place-items-center rounded-2xl bg-surface text-brandd"><svg class="ic h-7 w-7"><use href="#i-card"/></svg></span>
+          <div><h3 class="h3 text-deep">Tarjeta de débito</h3><p class="text-[15px] text-muted">Pagas en el consultorio.</p></div>
+        </div>
+        <div class="flex items-center gap-5 rounded-2xl bg-white p-6 shadow-card">
+          <span class="grid h-14 w-14 flex-none place-items-center rounded-2xl bg-surface text-brandd"><svg class="ic h-7 w-7"><use href="#i-cash"/></svg></span>
+          <div><h3 class="h3 text-deep">Divisas en efectivo</h3><p class="text-[15px] text-muted">También recibimos dólares en efectivo.</p></div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- Servicios -->
-    <section id="servicios" class="bg-white py-16 md:py-24">
-      <div class="max-w-6xl mx-auto px-5">
-        <p class="text-xs font-semibold tracking-widest uppercase text-pino-700">Servicios</p>
-        <h2 class="font-display text-3xl md:text-4xl font-semibold mt-2 max-w-xl">Todo lo que tu sonrisa necesita, para grandes y chamos</h2>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
-          <article class="rounded-3xl bg-crema p-6">
-            <div class="w-11 h-11 rounded-2xl bg-pino text-crema flex items-center justify-center text-xl" aria-hidden="true">🦷</div>
-            <h3 class="font-display text-xl font-semibold mt-4">Odontología general</h3>
-            <p class="text-pino/70 mt-2 text-[15px]">Limpieza dental, tratamiento de caries, cambio de resinas, aplicación de flúor y tratamiento de gingivitis.</p>
-          </article>
-          <article class="rounded-3xl bg-crema p-6">
-            <div class="w-11 h-11 rounded-2xl bg-pino text-crema flex items-center justify-center text-xl" aria-hidden="true">😁</div>
-            <h3 class="font-display text-xl font-semibold mt-4">Ortodoncia</h3>
-            <p class="text-pino/70 mt-2 text-[15px]">Dientes alineados y una mordida correcta para una sonrisa sana.</p>
-          </article>
-          <article class="rounded-3xl bg-crema p-6">
-            <div class="w-11 h-11 rounded-2xl bg-pino text-crema flex items-center justify-center text-xl" aria-hidden="true">🔩</div>
-            <h3 class="font-display text-xl font-semibold mt-4">Implantes</h3>
-            <p class="text-pino/70 mt-2 text-[15px]">Recupera la pieza que te falta y vuelve a comer y sonreír con confianza.</p>
-          </article>
-          <article class="rounded-3xl bg-crema p-6">
-            <div class="w-11 h-11 rounded-2xl bg-pino text-crema flex items-center justify-center text-xl" aria-hidden="true">✨</div>
-            <h3 class="font-display text-xl font-semibold mt-4">Diseño de sonrisa</h3>
-            <p class="text-pino/70 mt-2 text-[15px]">Odontología restauradora y estética para la sonrisa que siempre quisiste.</p>
-          </article>
-          <article class="rounded-3xl bg-crema p-6">
-            <div class="w-11 h-11 rounded-2xl bg-pino text-crema flex items-center justify-center text-xl" aria-hidden="true">🧒</div>
-            <h3 class="font-display text-xl font-semibold mt-4">Odontopediatría</h3>
-            <p class="text-pino/70 mt-2 text-[15px]">Consultas pensadas para los más pequeños de la casa, con paciencia y cariño.</p>
-          </article>
-          <article class="rounded-3xl bg-pino text-crema p-6">
-            <div class="w-11 h-11 rounded-2xl bg-menta text-pino flex items-center justify-center text-xl" aria-hidden="true">⚡</div>
-            <h3 class="font-display text-xl font-semibold mt-4">Emergencias y extracciones</h3>
-            <!-- CONFIRMAR: tiempos de atención de emergencias -->
-            <p class="text-crema/80 mt-2 text-[15px]">¿Dolor de muela que no espera? Escríbenos y te orientamos para atenderte lo antes posible.</p>
-          </article>
+<!-- 9. Primera visita -->
+<section class="bg-white py-[72px] lg:py-[112px]">
+  <div class="mx-auto max-w-[1180px] px-5">
+    <div class="mx-auto max-w-[640px] text-center">
+      <p class="eyebrow">Así de fácil</p>
+      <h2 class="h2 mt-3 text-deep">Tu primera visita en 3 pasos</h2>
+    </div>
+    <ol class="mt-10 grid gap-5 lg:mt-14 lg:grid-cols-3 lg:gap-7">
+      <li class="grid grid-cols-[56px_1fr] gap-x-4 rounded-2xl bg-surface p-6 lg:block lg:p-8">
+        <span class="row-span-3 font-display text-[40px] font-bold leading-none text-brand lg:text-[48px]">01</span>
+        <div class="hidden h-0.5 w-10 rounded-full bg-brand lg:mt-5 lg:block"></div>
+        <h3 class="h3 text-deep lg:mt-5">Escríbenos</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-muted">Mándanos un WhatsApp o llámanos y cuéntanos qué necesitas.</p>
+      </li>
+      <li class="grid grid-cols-[56px_1fr] gap-x-4 rounded-2xl bg-surface p-6 lg:block lg:p-8">
+        <span class="row-span-3 font-display text-[40px] font-bold leading-none text-brand lg:text-[48px]">02</span>
+        <div class="hidden h-0.5 w-10 rounded-full bg-brand lg:mt-5 lg:block"></div>
+        <h3 class="h3 text-deep lg:mt-5">Cuadramos tu cita</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-muted">Te proponemos día y hora dentro de nuestro horario, de lunes a sábado.</p>
+      </li>
+      <li class="grid grid-cols-[56px_1fr] gap-x-4 rounded-2xl bg-surface p-6 lg:block lg:p-8">
+        <span class="row-span-3 font-display text-[40px] font-bold leading-none text-brand lg:text-[48px]">03</span>
+        <div class="hidden h-0.5 w-10 rounded-full bg-brand lg:mt-5 lg:block"></div>
+        <h3 class="h3 text-deep lg:mt-5">Te atendemos</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-muted">Llegas al Edif. Oropan, piso 1, y te recibimos con calma y sin apuros.</p>
+      </li>
+    </ol>
+    <div class="mt-10 text-center">
+      <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20cita." class="btn btn-wa w-full sm:w-auto"><svg class="icf"><use href="#i-wa"/></svg>Dar el primer paso</a>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Preguntas frecuentes -->
+<section id="preguntas" class="bg-surface py-[72px] lg:py-[112px]">
+  <div class="mx-auto grid max-w-[1180px] gap-10 px-5 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
+    <div>
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2 class="h2 mt-3 text-deep">Lo que nos preguntan antes de venir</h2>
+      <p class="mt-4 text-muted">¿Tu duda no está aquí? Escríbenos, te respondemos por WhatsApp.</p>
+      <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20tengo%20una%20pregunta." class="btn btn-ghost mt-7 hidden border border-deep/15 bg-white text-deep lg:inline-flex"><svg class="icf text-[#128C4B]"><use href="#i-wa"/></svg>Hacer una pregunta</a>
+    </div>
+    <div class="space-y-3">
+      <details class="group rounded-2xl bg-white shadow-card" open>
+        <summary class="flex min-h-[64px] items-center justify-between gap-4 px-6 py-4 font-display text-[17px] font-semibold text-deep">¿Atienden a niños?<svg class="ic chev h-5 w-5 text-brandd"><use href="#i-chev"/></svg></summary>
+        <p class="px-6 pb-6 text-[15px] leading-relaxed text-muted">Sí. Tenemos odontopediatría: consultas pensadas para los más pequeños, con paciencia para que se sientan cómodos desde la primera visita.</p>
+      </details>
+      <details class="group rounded-2xl bg-white shadow-card">
+        <summary class="flex min-h-[64px] items-center justify-between gap-4 px-6 py-4 font-display text-[17px] font-semibold text-deep">Tengo un dolor fuerte, ¿qué hago?<svg class="ic chev h-5 w-5 text-brandd"><use href="#i-chev"/></svg></summary>
+        <p class="px-6 pb-6 text-[15px] leading-relaxed text-muted">Escríbenos o llámanos al (0424) 574.8609. Atendemos emergencias odontológicas: te orientamos y buscamos el espacio para verte lo antes posible dentro de nuestro horario.</p>
+      </details>
+      <details class="group rounded-2xl bg-white shadow-card">
+        <summary class="flex min-h-[64px] items-center justify-between gap-4 px-6 py-4 font-display text-[17px] font-semibold text-deep">¿Cuánto cuesta una consulta?<svg class="ic chev h-5 w-5 text-brandd"><use href="#i-chev"/></svg></summary>
+        <p class="px-6 pb-6 text-[15px] leading-relaxed text-muted">Depende de lo que necesites. Escríbenos por WhatsApp contándonos tu caso y te damos la información actualizada. Y si te conviene, puedes pagar tu tratamiento por partes con Cashea.</p>
+      </details>
+      <details class="group rounded-2xl bg-white shadow-card">
+        <summary class="flex min-h-[64px] items-center justify-between gap-4 px-6 py-4 font-display text-[17px] font-semibold text-deep">¿Qué formas de pago aceptan?<svg class="ic chev h-5 w-5 text-brandd"><use href="#i-chev"/></svg></summary>
+        <p class="px-6 pb-6 text-[15px] leading-relaxed text-muted">Cashea, Pago Móvil, tarjeta de débito y divisas en efectivo.</p>
+      </details>
+      <details class="group rounded-2xl bg-white shadow-card">
+        <summary class="flex min-h-[64px] items-center justify-between gap-4 px-6 py-4 font-display text-[17px] font-semibold text-deep">¿Dónde quedan exactamente?<svg class="ic chev h-5 w-5 text-brandd"><use href="#i-chev"/></svg></summary>
+        <p class="px-6 pb-6 text-[15px] leading-relaxed text-muted">En la Av. 20, entre Av. Vargas y Calle 19, Edif. Oropan, piso 1, justo frente al C.C. Capital Plaza, en el centro de Barquisimeto.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 11. Ubicación y horario -->
+<section id="ubicacion" class="bg-white py-[72px] lg:py-[112px]">
+  <div class="mx-auto max-w-[1180px] px-5">
+    <div class="max-w-[640px]">
+      <p class="eyebrow">Ubicación y horario</p>
+      <h2 class="h2 mt-3 text-deep">Frente al C.C. Capital Plaza</h2>
+    </div>
+    <div class="mt-10 grid gap-6 lg:mt-14 lg:grid-cols-[1.35fr_1fr] lg:gap-7">
+      <div class="relative h-[320px] overflow-hidden rounded-2xl bg-surface ring-1 ring-brand/10 lg:h-auto lg:min-h-[480px]">
+        <div class="absolute inset-0 grid place-items-center text-center text-muted">
+          <div><svg class="ic mx-auto h-8 w-8 text-brandd"><use href="#i-pin"/></svg><p class="mt-2 text-[15px]">Edif. Oropan · Av. 20, Barquisimeto</p></div>
         </div>
+        <iframe title="Mapa: Grupo Dental Loor, Edif. Oropan, Av. 20, Barquisimeto" src="https://maps.google.com/maps?q=Av.%2020%20entre%20Av.%20Vargas%20y%20Calle%2019%2C%20Edificio%20Oropan%2C%20Barquisimeto%2C%20Lara&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="absolute inset-0 h-full w-full border-0"></iframe>
       </div>
-    </section>
-
-    <!-- Por qué elegirnos -->
-    <section class="py-16 md:py-24">
-      <div class="max-w-6xl mx-auto px-5">
-        <p class="text-xs font-semibold tracking-widest uppercase text-pino-700">Por qué elegirnos</p>
-        <h2 class="font-display text-3xl md:text-4xl font-semibold mt-2">Ir al odontólogo no tiene por qué dar miedo</h2>
-        <div class="grid md:grid-cols-3 gap-8 mt-10">
-          <div class="border-t-2 border-pino pt-5">
-            <span class="font-display text-4xl text-menta">01</span>
-            <h3 class="font-display text-xl font-semibold mt-2">Toda la familia en un solo lugar</h3>
-            <p class="text-pino/70 mt-2">Desde la primera consulta de los niños hasta los tratamientos de los abuelos. Un solo sitio de confianza para todos.</p>
-          </div>
-          <div class="border-t-2 border-pino pt-5">
-            <span class="font-display text-4xl text-menta">02</span>
-            <h3 class="font-display text-xl font-semibold mt-2">Atención cálida y sin dolor</h3>
-            <p class="text-pino/70 mt-2">Te atendemos con calma y paciencia, para que te sientas tranquilo en el sillón.</p>
-          </div>
-          <div class="border-t-2 border-pino pt-5">
-            <span class="font-display text-4xl text-menta">03</span>
-            <h3 class="font-display text-xl font-semibold mt-2">Tecnología de vanguardia</h3>
-            <p class="text-pino/70 mt-2">Trabajamos con equipos modernos para que tu tratamiento sea más cómodo.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Formas de pago -->
-    <section id="pagos" class="px-5">
-      <div class="max-w-6xl mx-auto rounded-[2rem] bg-pino text-crema p-8 md:p-12 grano">
-        <div class="md:flex md:items-center md:justify-between gap-10">
-          <div class="max-w-md">
-            <p class="text-xs font-semibold tracking-widest uppercase text-menta">Formas de pago</p>
-            <h2 class="font-display text-3xl md:text-4xl font-semibold mt-2">Tu tratamiento, a tu ritmo</h2>
-            <p class="text-crema/75 mt-3">Con <strong class="text-crema">Cashea</strong> puedes empezar tu tratamiento hoy y pagarlo por partes. También recibimos Pago Móvil, débito y divisas en efectivo.</p>
-          </div>
-          <ul class="grid grid-cols-2 gap-3 mt-8 md:mt-0 md:min-w-[22rem]">
-            <li class="bg-crema text-pino rounded-2xl px-4 py-5 text-center font-semibold">Cashea</li>
-            <li class="bg-crema text-pino rounded-2xl px-4 py-5 text-center font-semibold">Pago Móvil</li>
-            <li class="bg-white/10 rounded-2xl px-4 py-5 text-center font-semibold">Débito</li>
-            <li class="bg-white/10 rounded-2xl px-4 py-5 text-center font-semibold">Divisas en efectivo</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Galería -->
-    <section class="py-16 md:py-24">
-      <div class="max-w-6xl mx-auto px-5">
-        <p class="text-xs font-semibold tracking-widest uppercase text-pino-700">Conócenos</p>
-        <h2 class="font-display text-3xl md:text-4xl font-semibold mt-2">Así es nuestro consultorio</h2>
-        <!-- CONFIRMAR: reemplazar por fotos reales enviadas por la clínica -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-10">
-          <img src="https://placehold.co/600x750/0e3a47/f5f1e8?text=Recepci%C3%B3n&font=raleway" alt="Foto de la recepción o sala de espera de Grupo Dental Loor" class="rounded-2xl w-full h-full object-cover" width="600" height="750">
-          <img src="https://placehold.co/600x750/14505f/f5f1e8?text=Consultorio&font=raleway" alt="Foto de un consultorio con el sillón dental" class="rounded-2xl w-full h-full object-cover" width="600" height="750">
-          <img src="https://placehold.co/600x750/7fcbb8/0e3a47?text=Equipo&font=raleway" alt="Foto del equipo de odontólogos y asistentes" class="rounded-2xl w-full h-full object-cover" width="600" height="750">
-          <img src="https://placehold.co/600x750/c9a66b/0e3a47?text=Fachada&font=raleway" alt="Foto de la fachada del Edificio Oropan o de la entrada de la clínica" class="rounded-2xl w-full h-full object-cover" width="600" height="750">
-        </div>
-      </div>
-    </section>
-
-    <!-- Ubicación y horario -->
-    <section id="ubicacion" class="bg-white py-16 md:py-24">
-      <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-10 items-start">
-        <div>
-          <p class="text-xs font-semibold tracking-widest uppercase text-pino-700">Ubicación y horario</p>
-          <h2 class="font-display text-3xl md:text-4xl font-semibold mt-2">Frente al C.C. Capital Plaza</h2>
-          <address class="not-italic mt-5 text-pino/80 leading-relaxed">
-            Av. 20, entre Av. Vargas y Calle 19<br>
-            Edif. Oropan, Piso 1<br>
-            Concepción, El Centro · Barquisimeto, Lara
-          </address>
-          <a href="https://www.google.com/maps/search/?api=1&query=Edificio%20Oropan%2C%20Av.%2020%2C%20Barquisimeto%2C%20Lara" target="_blank" rel="noopener" class="inline-block mt-4 font-semibold text-pino-700 underline underline-offset-4">Cómo llegar →</a>
-          <div class="mt-8 rounded-2xl bg-crema p-6">
-            <h3 class="font-display text-lg font-semibold">Horario</h3>
-            <dl class="mt-3 space-y-2 text-[15px]">
-              <div class="flex justify-between gap-4"><dt class="text-pino/70">Lunes a viernes</dt><dd class="font-semibold">8:00 am – 5:00 pm</dd></div>
-              <div class="flex justify-between gap-4"><dt class="text-pino/70">Sábado</dt><dd class="font-semibold">8:00 am – 1:00 pm</dd></div>
-              <div class="flex justify-between gap-4"><!-- CONFIRMAR: domingo cerrado (deducido) --><dt class="text-pino/70">Domingo</dt><dd class="font-semibold">Cerrado</dd></div>
-            </dl>
+      <div class="rounded-2xl bg-white p-7 shadow-card ring-1 ring-slate-100 lg:p-8">
+        <div class="flex gap-4">
+          <span class="hidden h-11 w-11 flex-none place-items-center rounded-full bg-surface text-brandd sm:grid"><svg class="ic h-5 w-5"><use href="#i-pin"/></svg></span>
+          <div>
+            <h3 class="h3 text-deep">Dirección</h3>
+            <p class="mt-1 text-[15px] leading-relaxed text-muted">Av. 20, entre Av. Vargas y Calle 19, Edif. Oropan, piso 1. Concepción, centro de Barquisimeto.</p>
+            <p class="mt-2 inline-flex rounded-full bg-surface px-3 py-1 text-[13px] font-medium text-deep">Referencia: frente al C.C. Capital Plaza</p>
           </div>
         </div>
-        <iframe title="Mapa de Grupo Dental Loor en Barquisimeto" src="https://maps.google.com/maps?q=Edificio%20Oropan%2C%20Av.%2020%2C%20Barquisimeto%2C%20Lara&output=embed" class="w-full h-80 md:h-[28rem] rounded-3xl border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="mt-7 flex gap-4 border-t border-slate-100 pt-7">
+          <span class="hidden h-11 w-11 flex-none place-items-center rounded-full bg-surface text-brandd sm:grid"><svg class="ic h-5 w-5"><use href="#i-clock"/></svg></span>
+          <div class="flex-1">
+            <h3 class="h3 text-deep">Horario</h3>
+            <table class="mt-2 w-full text-[15px]">
+              <tr class="border-b border-slate-100"><td class="py-2 text-muted">Lunes a viernes</td><td class="whitespace-nowrap py-2 text-right font-semibold text-ink">8:00 am – 5:00 pm</td></tr>
+              <tr><td class="py-2 text-muted">Sábado</td><td class="whitespace-nowrap py-2 text-right font-semibold text-ink">8:00 am – 1:00 pm</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="mt-7 grid gap-3">
+          <a href="https://www.google.com/maps/search/?api=1&query=Edif.%20Oropan%2C%20Av.%2020%20entre%20Av.%20Vargas%20y%20Calle%2019%2C%20Barquisimeto" class="btn btn-brand w-full"><svg class="ic h-5 w-5"><use href="#i-nav"/></svg>Abrir en Google Maps</a>
+          <a href="tel:+584245748609" class="btn btn-ghost w-full border border-deep/15 text-deep"><svg class="ic h-5 w-5"><use href="#i-phone"/></svg>(0424) 574.8609</a>
+        </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+</main>
 
-    <!-- CTA final -->
-    <section class="py-16 md:py-24 px-5 text-center grano">
-      <h2 class="font-display text-3xl md:text-5xl font-semibold max-w-2xl mx-auto leading-tight">¿Hace cuánto no vas al odontólogo?</h2>
-      <p class="mt-4 text-pino/70 max-w-md mx-auto">Escríbenos por WhatsApp, cuéntanos qué necesitas y te damos tu cita.</p>
-      <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-8 bg-pino text-crema font-semibold px-8 py-4 rounded-full hover:bg-pino-700 transition">Agendar mi cita</a>
-      <p class="mt-4 text-sm text-pino/60">(0424) 574-8609</p>
-    </section>
-  </main>
+<!-- 12. CTA final + pie -->
+<footer class="bg-deep text-white">
+  <div class="mx-auto max-w-[1180px] px-5 py-[72px] lg:py-[112px]">
+    <div class="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+      <div class="max-w-[620px]">
+        <div class="mb-5 h-1 w-12 rounded-full bg-accent"></div>
+        <h2 class="h2">Tu próxima cita está a un mensaje</h2>
+        <p class="mt-4 text-white/80">Cuéntanos qué necesitas y te respondemos por WhatsApp para cuadrar día y hora.</p>
+      </div>
+      <div class="flex flex-col gap-3 sm:flex-row">
+        <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20cita." class="btn btn-wa"><svg class="icf"><use href="#i-wa"/></svg>Escríbenos por WhatsApp</a>
+        <a href="tel:+584245748609" class="btn btn-ghost-light border border-white/60 text-white"><svg class="ic h-5 w-5"><use href="#i-phone"/></svg>Llamar</a>
+      </div>
+    </div>
 
-  <!-- Footer -->
-  <footer class="bg-pino text-crema/80 pt-12 pb-28 md:pb-12">
-    <div class="max-w-6xl mx-auto px-5 grid gap-8 md:grid-cols-3">
+    <div class="mt-14 grid gap-10 border-t border-white/10 pt-12 md:grid-cols-3">
       <div>
-        <p class="font-display text-xl text-crema font-semibold">Grupo Dental Loor</p>
-        <p class="mt-2 text-sm">Cuidado integral de la salud bucal para toda la familia.</p>
+        <p class="wm text-white">
+          <span class="sr-only">Grupo Dental Loor</span>
+          <span class="wm-top" aria-hidden="true">Grupo Dental</span>
+          <span class="wm-name" aria-hidden="true">LOOR</span>
+        </p>
+        <p class="mt-4 max-w-[300px] text-[15px] text-white/70">Cuidado integral de la salud bucal para toda la familia, en el centro de Barquisimeto.</p>
+        <p class="mt-3 font-display text-[15px] font-bold text-accent">#TuSonrisaNosMueve</p>
       </div>
-      <div class="text-sm">
-        <p class="text-crema font-semibold">Visítanos</p>
-        <p class="mt-2">Edif. Oropan, Piso 1, Av. 20 entre Av. Vargas y Calle 19, Barquisimeto</p>
+      <div class="space-y-3 text-[15px]">
+        <p class="text-[13px] font-semibold uppercase tracking-[.08em] text-accent">Contacto</p>
+        <p class="flex gap-3 text-white/80"><svg class="ic mt-0.5 h-5 w-5 text-accent"><use href="#i-pin"/></svg>Av. 20, entre Av. Vargas y Calle 19, Edif. Oropan, piso 1. Barquisimeto.</p>
+        <a href="tel:+584245748609" class="flex min-h-[44px] items-center gap-3 text-white/90"><svg class="ic h-5 w-5 text-accent"><use href="#i-phone"/></svg>(0424) 574.8609</a>
+        <a href="https://www.instagram.com/grupodental.loor/" class="flex min-h-[44px] items-center gap-3 text-white/90"><svg class="ic h-5 w-5 text-accent"><use href="#i-ig"/></svg>@grupodental.loor</a>
       </div>
-      <div class="text-sm">
-        <p class="text-crema font-semibold">Contacto</p>
-        <p class="mt-2"><a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" class="hover:text-crema">WhatsApp: (0424) 574-8609</a></p>
-        <p class="mt-1"><a href="https://www.instagram.com/grupodental.loor" target="_blank" rel="noopener" class="hover:text-crema">Instagram: @grupodental.loor</a></p>
+      <div class="space-y-3 text-[15px]">
+        <p class="text-[13px] font-semibold uppercase tracking-[.08em] text-accent">Horario</p>
+        <p class="text-white/80">Lunes a viernes<br><span class="font-semibold text-white">8:00 am – 5:00 pm</span></p>
+        <p class="text-white/80">Sábado<br><span class="font-semibold text-white">8:00 am – 1:00 pm</span></p>
       </div>
     </div>
-    <p class="max-w-6xl mx-auto px-5 mt-10 text-xs text-crema/50">© 2026 Grupo Dental Loor · Barquisimeto, Venezuela</p>
-  </footer>
+    <p class="mt-12 border-t border-white/10 pb-[76px] pt-6 text-[13px] text-white/60 lg:pb-0">© 2026 Grupo Dental Loor · Barquisimeto, Lara · Imágenes ilustrativas.</p>
+  </div>
+</footer>
 
-  <!-- Botón flotante de WhatsApp -->
-  <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp" class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-xl shadow-black/20 hover:scale-105 transition">
-    <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
-  </a>
+<!-- 13. Barra fija inferior (móvil) -->
+<div class="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 gap-2 border-t border-slate-200 bg-white/95 px-3 pt-2 backdrop-blur lg:hidden" style="padding-bottom:max(8px,env(safe-area-inset-bottom))">
+  <a href="https://wa.me/584245748609?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20cita." class="btn btn-wa h-12 px-3"><svg class="icf h-5 w-5"><use href="#i-wa"/></svg>WhatsApp</a>
+  <a href="tel:+584245748609" class="btn btn-brand h-12 px-3"><svg class="ic h-5 w-5"><use href="#i-phone"/></svg>Llamar</a>
+</div>
+
 </body>
 </html>

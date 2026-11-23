@@ -1,254 +1,448 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Odontosonrisa Centro Bucal | Odontología en el Centro de Barquisimeto</title>
-  <meta name="description" content="Odontosonrisa Centro Bucal: ortodoncia, odontopediatría, endodoncia, limpiezas, estética y más en el C.C. Capital Plaza, Av. Vargas, Barquisimeto. Escríbenos por WhatsApp.">
-  <meta property="og:title" content="Odontosonrisa Centro Bucal">
-  <meta property="og:description" content="Tu centro odontológico en el C.C. Capital Plaza, Barquisimeto. Agenda tu cita por WhatsApp.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_VE">
-  <meta name="theme-color" content="#0e4f5c">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e4f5c'/%3E%3Cpath d='M20 18c-6 0-9 5-8 11 1 5 3 9 4 15 1 4 2 6 4 6s3-3 4-8c1-3 2-5 4-5s3 2 4 5c1 5 2 8 4 8s3-2 4-6c1-6 3-10 4-15 1-6-2-11-8-11-4 0-6 2-8 2s-4-2-8-2z' fill='%23fff'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            petroleo: { DEFAULT: '#0e4f5c', dark: '#0a3942', light: '#1a6b7a' },
-            menta: { DEFAULT: '#d8f0ea', soft: '#eef8f5' },
-            coral: { DEFAULT: '#f08a6c', dark: '#d9704f' },
-            hueso: '#fbfaf7'
-          },
-          fontFamily: {
-            display: ['Fraunces', 'Georgia', 'serif'],
-            sans: ['Outfit', 'system-ui', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    html { scroll-behavior: smooth; }
-    .blob { border-radius: 58% 42% 55% 45% / 48% 55% 45% 52%; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Odontosonrisa Centro Bucal · Odontología en el C.C. Capital Plaza, Barquisimeto</title>
+<meta name="description" content="Odontología integral, estética y cirugía en el C.C. Capital Plaza, Av. Vargas, Barquisimeto. 15 años cuidando la salud bucal: ortodoncia, odontopediatría, endodoncia, limpiezas, blanqueamiento y prótesis. Llama al (0251) 417.3431.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_VE">
+<meta property="og:title" content="Odontosonrisa | Centro Bucal · Barquisimeto">
+<meta property="og:description" content="Odontología integral, estética y cirugía en el C.C. Capital Plaza, Nivel 2, Local 120. Lunes a viernes.">
+<meta property="og:image" content="https://fyzton.github.io/webs-barquisimeto/odontosonrisa-centro-bucal/img/hero.webp">
+<meta name="theme-color" content="#0B3D45">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230A7C87'/%3E%3Ccircle cx='32' cy='32' r='13' fill='none' stroke='%23fff' stroke-width='7'/%3E%3C/svg%3E">
+<link rel="preload" as="image" href="img/hero-mobile.webp" media="(max-width: 1023px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero.webp" media="(min-width: 1024px)" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { brand:'#0A7C87', brandl:'#0E9AA7', navy:'#0B3D45', accent:'#22C3B5', surface:'#E9F7F6', ink:'#1F2A37', muted:'#5B6B7D', wa:'#25D366' },
+  fontFamily: { display:['Montserrat','system-ui','sans-serif'], sans:['"Nunito Sans"','system-ui','sans-serif'] },
+  boxShadow: { soft:'0 10px 30px rgba(11,61,69,.08)' }
+} } }
+</script>
+<style>
+  body{font-family:"Nunito Sans",system-ui,sans-serif;color:#1F2A37;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .h1,.h2,.h3{font-family:Montserrat,system-ui,sans-serif;font-weight:700;letter-spacing:-.015em;text-wrap:balance}
+  .h1{font-size:34px;line-height:1.1}
+  .h2{font-size:26px;line-height:1.2}
+  .h3{font-size:19px;line-height:1.3;font-weight:600;letter-spacing:-.01em}
+  .eyebrow{font-family:Montserrat,system-ui,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#087480}
+  .lead{font-size:17px;line-height:1.65}
+  @media (min-width:1024px){
+    body{font-size:17px;line-height:1.7}
+    .h1{font-size:52px;line-height:1.08}
+    .h2{font-size:38px;line-height:1.15}
+    .h3{font-size:22px}
+    .lead{font-size:19px}
+  }
+  :where(.ic){width:22px;height:22px}
+  .ic{fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}
+  :where(.icf){width:22px;height:22px}
+  .icf{fill:currentColor;flex:none}
+  :where(.btn){display:inline-flex;height:52px;padding:0 1.75rem}
+  .btn{align-items:center;justify-content:center;gap:.6rem;border-radius:999px;font-family:Montserrat,system-ui,sans-serif;font-size:15px;font-weight:600;line-height:1;white-space:nowrap;transition:background-color .15s,color .15s,border-color .15s,transform .12s}
+  @media (min-width:1024px){:where(.btn){height:50px}}
+  .btn:active{transform:scale(.97)}
+  .btn-brand{background:#0A7C87;color:#fff}
+  .btn-white{background:#fff;color:#0B3D45}
+  .btn-wa{background:#25D366;color:#0B3D45}
+  .btn-line{border:1.5px solid rgba(11,61,69,.18);color:#0B3D45;background:#fff}
+  .btn-line-light{border:1.5px solid rgba(255,255,255,.6);color:#fff}
+  @media (hover:hover) and (pointer:fine){
+    .btn-brand:hover{background:#0B3D45}
+    .btn-white:hover{background:#E9F7F6}
+    .btn-wa:hover{background:#1FBF5B}
+    .btn-line:hover{border-color:#0A7C87;color:#0A7C87}
+    .btn-line-light:hover{background:rgba(255,255,255,.12)}
+    .lnk:hover{color:#0A7C87}
+    .lnk-light:hover{color:#fff}
+    .qa:hover{color:#0A7C87}
+  }
+  @media (hover:hover) and (pointer:fine) and (min-width:1024px){
+    .hero-pri:hover{background:#0B3D45}
+    .hero-sec:hover{border-color:#0A7C87;color:#0A7C87}
+  }
+  .hero-in{animation:heroIn 560ms cubic-bezier(0.23,1,0.32,1) both}
+  @keyframes heroIn{from{opacity:0;transform:translateY(14px)}}
+  @media (prefers-reduced-motion:reduce){
+    .hero-in{animation:none}
+    .btn,.btn:active{transform:none;transition:background-color .15s}
+  }
+  summary{list-style:none;cursor:pointer}
+  summary::-webkit-details-marker{display:none}
+  details[open] .pm{transform:rotate(45deg)}
+  .pm{transition:transform .2s}
+  @media (prefers-reduced-motion:reduce){.pm{transition:none}}
+  #inicio .hero-text{padding-right:max(1.25rem,calc((100vw - 1180px)/2 + 1.25rem))}
+</style>
 </head>
-<body class="bg-hueso font-sans text-slate-700 antialiased">
+<body class="bg-white">
 
-  <!-- Barra superior -->
-  <header class="sticky top-0 z-40 bg-hueso/90 backdrop-blur border-b border-petroleo/10">
-    <nav class="max-w-6xl mx-auto flex items-center justify-between px-5 py-3">
-      <a href="#inicio" class="flex items-center gap-2">
-        <span class="grid place-items-center w-9 h-9 rounded-xl bg-petroleo text-white">
-          <svg viewBox="0 0 64 64" class="w-6 h-6" fill="currentColor" aria-hidden="true"><path d="M20 14c-6 0-10 5-9 12 1 6 3 10 4 17 1 5 2 8 5 8s4-3 5-9c1-4 2-6 5-6s4 2 5 6c1 6 2 9 5 9s4-3 5-8c1-7 3-11 4-17 1-7-3-12-9-12-4 0-7 2-10 2s-6-2-10-2z"/></svg>
-        </span>
-        <span class="font-display font-bold text-petroleo text-lg leading-none">Odontosonrisa</span>
-      </a>
-      <div class="hidden md:flex items-center gap-7 text-sm font-medium text-petroleo">
-        <a href="#servicios" class="hover:text-coral-dark">Servicios</a>
-        <a href="#por-que" class="hover:text-coral-dark">Por qué nosotros</a>
-        <a href="#ubicacion" class="hover:text-coral-dark">Ubicación</a>
-        <a href="https://wa.me/582514173431?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quisiera%20agendar%20una%20cita" target="_blank" rel="noopener" class="rounded-full bg-petroleo text-white px-5 py-2 hover:bg-petroleo-dark">Agendar cita</a>
-      </div>
-      <a href="tel:+582514173431" class="md:hidden text-sm font-semibold text-petroleo border border-petroleo/30 rounded-full px-4 py-1.5">Llamar</a>
+<!-- Iconos lineales (sprite) -->
+<svg style="position:absolute;width:0;height:0" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-nav" viewBox="0 0 24 24"><path d="M3 11 22 2l-9 19-2-8-8-2z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1.5"/><rect width="7" height="7" x="14" y="3" rx="1.5"/><rect width="7" height="7" x="14" y="14" rx="1.5"/><rect width="7" height="7" x="3" y="14" rx="1.5"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0L14.06 8.5A2 2 0 0 0 15.5 9.94l6.14 1.58a.5.5 0 0 1 0 .96L15.5 14.06a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z"/></symbol>
+  <symbol id="i-cross" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="4"/><path d="M12 8v8M8 12h8"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.5h-.01a9.5 9.5 0 0 1-4.84-1.33l-.35-.21-3.6.94.96-3.5-.23-.36a9.46 9.46 0 0 1-1.45-5.05c0-5.24 4.27-9.5 9.52-9.5 2.54 0 4.93.99 6.72 2.79a9.43 9.43 0 0 1 2.78 6.72c0 5.24-4.27 9.5-9.5 9.5zm8.08-17.58A11.36 11.36 0 0 0 12.05.58C5.75.58.63 5.7.63 12c0 2.01.53 3.98 1.53 5.71L.53 23.42l5.85-1.53a11.4 11.4 0 0 0 5.66 1.44h.01c6.3 0 11.42-5.12 11.42-11.42 0-3.05-1.19-5.92-3.35-8.08z"/></symbol>
+</svg>
+
+<!-- 1. Cabecera -->
+<header class="sticky top-0 z-40 border-b border-slate-100 bg-white/95 backdrop-blur lg:static lg:bg-white">
+  <div class="mx-auto flex h-16 max-w-[1180px] items-center justify-between px-5 lg:h-20">
+    <a href="#inicio" class="flex min-h-[44px] items-center gap-3" aria-label="Odontosonrisa Centro Bucal, inicio">
+      <span class="grid h-10 w-10 place-items-center rounded-full bg-[#1A1A1A]" aria-hidden="true"><span class="h-4 w-4 rounded-full border-[3.5px] border-white"></span></span>
+      <span class="leading-tight">
+        <span class="block font-display text-[17px] font-bold tracking-tight text-navy">Odontosonrisa</span>
+        <span class="block text-[12.5px] text-muted">Centro Bucal<span class="hidden sm:inline"> · C.C. Capital Plaza</span></span>
+      </span>
+    </a>
+    <nav class="hidden items-center gap-8 text-[15px] font-semibold text-ink lg:flex" aria-label="Principal">
+      <a class="lnk" href="#servicios">Servicios</a>
+      <a class="lnk" href="#primera-visita">Primera visita</a>
+      <a class="lnk" href="#preguntas">Preguntas</a>
+      <a class="lnk" href="#ubicacion">Ubicación</a>
     </nav>
-  </header>
+    <div class="flex items-center gap-3">
+      <a href="tel:+582514173431" class="btn btn-brand hidden lg:inline-flex"><svg class="ic h-[18px] w-[18px]"><use href="#i-phone"/></svg>(0251) 417.3431</a>
+      <a href="tel:+582514173431" class="inline-flex h-11 items-center gap-2 rounded-full bg-surface px-4 font-display text-[14px] font-semibold text-navy lg:hidden"><svg class="ic h-[18px] w-[18px] text-brand"><use href="#i-phone"/></svg>Llamar</a>
+    </div>
+  </div>
+</header>
 
-  <main>
-    <!-- Hero -->
-    <section id="inicio" class="relative overflow-hidden">
-      <div class="absolute -top-24 -right-24 w-80 h-80 md:w-[32rem] md:h-[32rem] bg-menta blob" aria-hidden="true"></div>
-      <div class="absolute bottom-0 -left-16 w-48 h-48 bg-coral/20 blob" aria-hidden="true"></div>
-      <div class="relative max-w-6xl mx-auto px-5 pt-12 pb-16 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <p class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-petroleo bg-white/80 border border-petroleo/15 rounded-full px-3 py-1">
-            <span class="w-2 h-2 rounded-full bg-coral"></span> C.C. Capital Plaza · Barquisimeto
-          </p>
-          <h1 class="mt-5 font-display text-4xl sm:text-5xl md:text-6xl font-bold text-petroleo leading-[1.05]">
-            Odontosonrisa<br><span class="text-coral-dark">Centro Bucal</span>
-          </h1>
-          <p class="mt-5 text-lg text-slate-600 max-w-md">
-            Desde una limpieza hasta tu ortodoncia, todo lo que tu boca necesita en un mismo lugar, en pleno centro de Barquisimeto.
-          </p>
-          <div class="mt-8 flex flex-col sm:flex-row gap-3">
-            <a href="https://wa.me/582514173431?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quisiera%20agendar%20una%20cita" target="_blank" rel="noopener"
-               class="inline-flex items-center justify-center gap-2 rounded-full bg-coral hover:bg-coral-dark text-white font-semibold px-7 py-4 shadow-lg shadow-coral/30 transition">
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2.1 1.3 2.4 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.2 1.3z"/></svg>
-              Agenda tu cita por WhatsApp
-            </a>
-            <a href="#servicios" class="inline-flex items-center justify-center rounded-full border-2 border-petroleo/20 text-petroleo font-semibold px-7 py-4 hover:border-petroleo transition">
-              Ver servicios
-            </a>
-          </div>
-          <p class="mt-4 text-sm text-slate-500">Lunes a viernes · 8:30 am a 5:00 pm</p> <!-- CONFIRMAR horario -->
-        </div>
+<main>
+<!-- 2. Hero -->
+<section id="inicio" class="relative lg:grid lg:h-[660px] lg:grid-cols-[1.1fr_1fr]">
+  <div class="relative h-[640px] overflow-hidden lg:h-full">
+    <picture>
+      <source media="(max-width: 1023px)" srcset="img/hero-mobile.webp" width="750" height="1240">
+      <img src="img/hero.webp" width="1600" height="1066" fetchpriority="high" alt="Paciente sonriendo, recostada en un sillón dental azul junto a su odontóloga (imagen ilustrativa)" class="absolute inset-0 h-full w-full object-cover object-center lg:object-[90%_center]">
+    </picture>
+    <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/80 via-[48%] to-transparent to-[72%] lg:hidden"></div>
+    <p class="absolute left-5 top-4 inline-flex items-center gap-2 rounded-full bg-navy/60 px-3.5 py-1.5 text-[13.5px] font-semibold text-white backdrop-blur-sm lg:hidden"><svg class="ic h-4 w-4"><use href="#i-pin"/></svg>C.C. Capital Plaza · Av. Vargas</p>
+  </div>
 
-        <!-- Ilustración -->
-        <div class="relative mx-auto w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96" aria-hidden="true">
-          <div class="absolute inset-0 bg-petroleo blob"></div>
-          <div class="absolute inset-6 bg-petroleo-light/60 blob rotate-12"></div>
-          <svg viewBox="0 0 64 64" class="absolute inset-0 m-auto w-1/2 h-1/2 text-white drop-shadow-xl" fill="currentColor">
-            <path d="M20 14c-6 0-10 5-9 12 1 6 3 10 4 17 1 5 2 8 5 8s4-3 5-9c1-4 2-6 5-6s4 2 5 6c1 6 2 9 5 9s4-3 5-8c1-7 3-11 4-17 1-7-3-12-9-12-4 0-7 2-10 2s-6-2-10-2z"/>
-          </svg>
-          <svg viewBox="0 0 24 24" class="absolute top-8 right-10 w-8 h-8 text-coral" fill="currentColor"><path d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></svg>
-          <svg viewBox="0 0 24 24" class="absolute bottom-12 left-6 w-5 h-5 text-menta" fill="currentColor"><path d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></svg>
-        </div>
+  <div class="hero-in hero-text absolute inset-x-0 bottom-0 px-5 pb-8 text-white lg:static lg:flex lg:flex-col lg:justify-center lg:pb-0 lg:pl-16 lg:text-ink xl:pl-20">
+    <p class="hidden items-center gap-2 self-start rounded-full bg-surface px-3.5 py-1.5 text-[13.5px] font-semibold text-navy lg:inline-flex">
+      <svg class="ic h-4 w-4 lg:text-brand"><use href="#i-pin"/></svg>C.C. Capital Plaza · Av. Vargas
+    </p>
+    <h1 class="h1 max-w-[540px] lg:mt-6 lg:text-navy">Tu centro odontológico en el Capital Plaza</h1>
+    <p class="mt-3 max-w-[500px] text-white/90 lg:lead lg:mt-5 lg:text-muted">Odontología integral, estética y cirugía. 15&nbsp;años cuidando la salud bucal de Barquisimeto.</p>
+    <div class="mt-6 flex flex-col gap-3 sm:flex-row lg:mt-8">
+      <a href="tel:+582514173431" class="btn hero-pri w-full bg-white text-navy sm:w-auto lg:bg-brand lg:text-white"><svg class="ic h-5 w-5 text-brand lg:text-white"><use href="#i-phone"/></svg>Llamar para pedir cita</a>
+      <a href="https://wa.me/582514173431?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20pedir%20una%20cita." class="btn hero-sec w-full border-[1.5px] border-white/60 text-white sm:w-auto lg:border-navy/20 lg:text-navy"><svg class="icf h-5 w-5 text-wa lg:text-[#128C4B]"><use href="#i-wa"/></svg><span><span class="lg:hidden">Escribir por </span>WhatsApp</span></a>
+    </div>
+    <dl class="mt-10 hidden max-w-[520px] grid-cols-2 gap-6 border-t border-slate-200 pt-6 lg:grid">
+      <div class="flex gap-3"><svg class="ic mt-0.5 text-brand"><use href="#i-clock"/></svg><div><dt class="text-[13px] font-semibold uppercase tracking-[.05em] text-muted">Horario</dt><dd class="mt-0.5 text-[15px] font-semibold text-navy">Lunes a viernes<br>8:30 am – 5:00 pm</dd></div></div>
+      <div class="flex gap-3"><svg class="ic mt-0.5 text-brand"><use href="#i-pin"/></svg><div><dt class="text-[13px] font-semibold uppercase tracking-[.05em] text-muted">Dónde</dt><dd class="mt-0.5 text-[15px] font-semibold text-navy">Nivel 2, Local 120<br>El Centro, Barquisimeto</dd></div></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 3. Barra de acciones (móvil) -->
+<nav class="grid grid-cols-3 border-b border-slate-100 bg-white lg:hidden" aria-label="Acciones rápidas">
+  <a href="https://www.google.com/maps/search/?api=1&query=C.C.%20Capital%20Plaza%2C%20Av.%20Vargas%2C%20Barquisimeto" class="flex h-[76px] flex-col items-center justify-center gap-1.5 font-display text-[13.5px] font-semibold text-navy"><svg class="ic text-brand"><use href="#i-nav"/></svg>Cómo llegar</a>
+  <a href="tel:+582514173431" class="flex h-[76px] flex-col items-center justify-center gap-1.5 border-x border-slate-100 font-display text-[13.5px] font-semibold text-navy"><svg class="ic text-brand"><use href="#i-phone"/></svg>Llamar</a>
+  <a href="https://wa.me/582514173431?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20pedir%20una%20cita." class="flex h-[76px] flex-col items-center justify-center gap-1.5 font-display text-[13.5px] font-semibold text-navy"><svg class="icf text-[#128C4B]"><use href="#i-wa"/></svg>WhatsApp</a>
+</nav>
+
+<!-- 4. Destacados -->
+<section class="bg-surface" aria-label="Lo que encuentras en Odontosonrisa">
+  <div class="mx-auto grid max-w-[1180px] divide-y divide-brand/10 px-5 py-4 lg:grid-cols-3 lg:divide-x lg:divide-y-0 lg:py-10">
+    <a href="#servicios" class="qa flex items-start gap-4 py-5 lg:px-8 lg:py-2 lg:first:pl-0">
+      <span class="grid h-12 w-12 flex-none place-items-center rounded-full bg-white text-brand shadow-soft"><svg class="ic"><use href="#i-users"/></svg></span>
+      <span><span class="h3 block text-navy">Niños y adultos</span><span class="mt-1 block text-[15px] leading-snug text-muted">Odontopediatría para los chamos y tratamientos para toda la familia.</span></span>
+    </a>
+    <a href="#servicios" class="qa flex items-start gap-4 py-5 lg:px-8 lg:py-2">
+      <span class="grid h-12 w-12 flex-none place-items-center rounded-full bg-white text-brand shadow-soft"><svg class="ic"><use href="#i-grid"/></svg></span>
+      <span><span class="h3 block text-navy">Todo en un mismo lugar</span><span class="mt-1 block text-[15px] leading-snug text-muted">De la limpieza a la ortodoncia, la endodoncia o la cirugía.</span></span>
+    </a>
+    <a href="#ubicacion" class="qa flex items-start gap-4 py-5 lg:px-8 lg:py-2">
+      <span class="grid h-12 w-12 flex-none place-items-center rounded-full bg-white text-brand shadow-soft"><svg class="ic"><use href="#i-building"/></svg></span>
+      <span><span class="h3 block text-navy">En pleno centro</span><span class="mt-1 block text-[15px] leading-snug text-muted">C.C. Capital Plaza, Av. Vargas, entre carreras 19 y 20.</span></span>
+    </a>
+  </div>
+</section>
+
+<!-- 5. Bienvenida -->
+<section class="bg-white py-[72px] lg:py-[112px]">
+  <div class="mx-auto grid max-w-[1180px] items-center gap-10 px-5 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
+    <div class="relative mx-auto w-full max-w-[460px] lg:order-2 lg:max-w-none">
+      <div class="absolute -right-3 -top-3 h-[70%] w-[70%] rounded-[28px] bg-surface lg:-right-6 lg:-top-6"></div>
+      <img src="img/bienvenida.webp" width="800" height="1000" loading="lazy" alt="Paciente conversando tranquila con su odontóloga antes de la consulta (imagen ilustrativa)" class="relative aspect-[4/3] w-full rounded-[28px] object-cover object-[center_30%] lg:aspect-[5/5.4]">
+    </div>
+    <div class="lg:order-1">
+      <p class="eyebrow">Bienvenido a Odontosonrisa</p>
+      <h2 class="h2 mt-3 text-navy">Cuidamos tu boca en el corazón de Barquisimeto</h2>
+      <p class="mt-5 text-muted">Desde hace 15&nbsp;años, Odontosonrisa te acompaña a cuidar tu salud bucal desde el C.C. Capital Plaza, Nivel 2, Local 120, en la Av. Vargas. Aquí consigues en un solo sitio lo que tu familia necesita: desde la primera consulta de los más pequeños hasta la ortodoncia, la endodoncia o una prótesis.</p>
+      <p class="mt-4 text-muted">Cada caso lo trabajamos de forma personalizada: nos tomamos el tiempo de hacer un diagnóstico preciso y de explicarte cada paso, para que tu visita sea una buena experiencia. Llámanos y te orientamos sobre la cita que mejor te quede.</p>
+      <ul class="mt-7 grid gap-3 sm:grid-cols-2">
+        <li class="flex items-center gap-3 font-semibold text-ink"><span class="grid h-7 w-7 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic h-4 w-4"><use href="#i-check"/></svg></span>Ortodoncia y estética</li>
+        <li class="flex items-center gap-3 font-semibold text-ink"><span class="grid h-7 w-7 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic h-4 w-4"><use href="#i-check"/></svg></span>Odontopediatría</li>
+        <li class="flex items-center gap-3 font-semibold text-ink"><span class="grid h-7 w-7 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic h-4 w-4"><use href="#i-check"/></svg></span>Endodoncia y cirugía</li>
+        <li class="flex items-center gap-3 font-semibold text-ink"><span class="grid h-7 w-7 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic h-4 w-4"><use href="#i-check"/></svg></span>Lunes a viernes</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Primera visita (línea de tiempo) -->
+<section id="primera-visita" class="scroll-mt-20 bg-surface py-[72px] lg:py-[104px]">
+  <div class="mx-auto max-w-[1180px] px-5">
+    <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+      <div class="max-w-[600px]">
+        <p class="eyebrow">Así de sencillo</p>
+        <h2 class="h2 mt-3 text-navy">Tu primera visita en 3 pasos</h2>
       </div>
-    </section>
-
-    <!-- Servicios -->
-    <section id="servicios" class="bg-white py-16 md:py-24">
-      <div class="max-w-6xl mx-auto px-5">
-        <p class="text-sm font-semibold uppercase tracking-widest text-coral-dark">Servicios</p>
-        <h2 class="mt-2 font-display text-3xl md:text-4xl font-bold text-petroleo max-w-xl">Cuidamos tu sonrisa de punta a punta</h2>
-        <!-- CONFIRMAR lista de servicios y descripciones -->
-        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          <article class="rounded-3xl bg-menta-soft border border-petroleo/10 p-6">
-            <div class="w-12 h-12 grid place-items-center rounded-2xl bg-petroleo text-white text-xl" aria-hidden="true">✦</div>
-            <h3 class="mt-4 font-display text-xl font-bold text-petroleo">Ortodoncia</h3>
-            <p class="mt-2 text-slate-600">Para alinear tus dientes y lograr una mordida cómoda y una sonrisa pareja.</p>
-          </article>
-          <article class="rounded-3xl bg-menta-soft border border-petroleo/10 p-6">
-            <div class="w-12 h-12 grid place-items-center rounded-2xl bg-coral text-white text-xl" aria-hidden="true">☺</div>
-            <h3 class="mt-4 font-display text-xl font-bold text-petroleo">Odontopediatría</h3>
-            <p class="mt-2 text-slate-600">Atención para los más pequeños de la casa, para que crezcan con dientes sanos.</p>
-          </article>
-          <article class="rounded-3xl bg-menta-soft border border-petroleo/10 p-6">
-            <div class="w-12 h-12 grid place-items-center rounded-2xl bg-petroleo text-white text-xl" aria-hidden="true">✚</div>
-            <h3 class="mt-4 font-display text-xl font-bold text-petroleo">Endodoncia</h3>
-            <p class="mt-2 text-slate-600">El tratamiento de conducto que salva tu diente cuando duele o está muy dañado.</p>
-          </article>
-          <article class="rounded-3xl bg-menta-soft border border-petroleo/10 p-6">
-            <div class="w-12 h-12 grid place-items-center rounded-2xl bg-coral text-white text-xl" aria-hidden="true">❋</div>
-            <h3 class="mt-4 font-display text-xl font-bold text-petroleo">Limpiezas y periodoncia</h3>
-            <p class="mt-2 text-slate-600">Limpieza dental y cuidado de las encías para prevenir sangrado y problemas a futuro.</p>
-          </article>
-          <article class="rounded-3xl bg-menta-soft border border-petroleo/10 p-6">
-            <div class="w-12 h-12 grid place-items-center rounded-2xl bg-petroleo text-white text-xl" aria-hidden="true">★</div>
-            <h3 class="mt-4 font-display text-xl font-bold text-petroleo">Estética y prótesis</h3>
-            <p class="mt-2 text-slate-600">Para devolverle a tu sonrisa su forma, su color y los dientes que hacen falta.</p>
-          </article>
-          <article class="rounded-3xl bg-menta-soft border border-petroleo/10 p-6">
-            <div class="w-12 h-12 grid place-items-center rounded-2xl bg-coral text-white text-xl" aria-hidden="true">◆</div>
-            <h3 class="mt-4 font-display text-xl font-bold text-petroleo">Cirugía y exodoncia</h3>
-            <p class="mt-2 text-slate-600">Extracciones, incluidas las cordales, y procedimientos de cirugía bucal.</p>
-          </article>
+      <p class="max-w-[380px] text-muted">Sin vueltas: una llamada y ya tienes tu cita cuadrada.</p>
+    </div>
+    <ol class="mt-10 grid gap-0 lg:mt-14 lg:grid-cols-3 lg:gap-8">
+      <li class="relative grid grid-cols-[56px_1fr] gap-x-5 pb-9 lg:block lg:pb-0">
+        <span class="absolute bottom-0 left-[27px] top-14 w-px bg-brand/25 lg:left-16 lg:right-[-2rem] lg:top-7 lg:h-px lg:w-auto" aria-hidden="true"></span>
+        <span class="relative grid h-14 w-14 place-items-center rounded-full bg-brandl font-display text-[20px] font-bold text-white">1</span>
+        <div class="lg:mt-6">
+          <h3 class="h3 text-navy">Llámanos</h3>
+          <p class="mt-2 text-[15.5px] leading-relaxed text-muted">Al <a href="tel:+582514173431" class="font-semibold text-[#087480] underline-offset-2 hover:underline">(0251) 417.3431</a>, de lunes a viernes, y cuéntanos qué necesitas.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Por qué elegirnos -->
-    <section id="por-que" class="py-16 md:py-24 bg-petroleo text-white relative overflow-hidden">
-      <div class="absolute -right-20 -bottom-20 w-72 h-72 bg-petroleo-light blob opacity-60" aria-hidden="true"></div>
-      <div class="relative max-w-6xl mx-auto px-5">
-        <p class="text-sm font-semibold uppercase tracking-widest text-coral">Por qué Odontosonrisa</p>
-        <h2 class="mt-2 font-display text-3xl md:text-4xl font-bold max-w-xl">Más fácil de lo que crees</h2>
-        <div class="mt-10 grid md:grid-cols-3 gap-8">
-          <div>
-            <p class="font-display text-5xl font-bold text-coral">01</p>
-            <h3 class="mt-3 text-xl font-semibold">Todo en un solo lugar</h3>
-            <p class="mt-2 text-white/80">Ortodoncia, niños, conductos, encías, estética, prótesis y cirugía. No tienes que andar de consultorio en consultorio.</p>
-          </div>
-          <div>
-            <p class="font-display text-5xl font-bold text-coral">02</p>
-            <h3 class="mt-3 text-xl font-semibold">En pleno centro</h3>
-            <p class="mt-2 text-white/80">Estamos en el C.C. Capital Plaza, en la Av. Vargas: fácil de llegar desde cualquier parte de Barquisimeto.</p>
-          </div>
-          <div>
-            <p class="font-display text-5xl font-bold text-coral">03</p>
-            <h3 class="mt-3 text-xl font-semibold">Te atendemos por WhatsApp</h3>
-            <p class="mt-2 text-white/80">Escríbenos o llámanos para pedir tu cita o aclarar tus dudas, sin complicaciones.</p>
-          </div>
+      </li>
+      <li class="relative grid grid-cols-[56px_1fr] gap-x-5 pb-9 lg:block lg:pb-0">
+        <span class="absolute bottom-0 left-[27px] top-14 w-px bg-brand/25 lg:left-16 lg:right-[-2rem] lg:top-7 lg:h-px lg:w-auto" aria-hidden="true"></span>
+        <span class="relative grid h-14 w-14 place-items-center rounded-full bg-brandl font-display text-[20px] font-bold text-white">2</span>
+        <div class="lg:mt-6">
+          <h3 class="h3 text-navy">Cuadramos tu cita</h3>
+          <p class="mt-2 text-[15.5px] leading-relaxed text-muted">Buscamos juntos el día y la hora que mejor te queden, en la mañana o en la tarde.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Galería -->
-    <section id="galeria" class="py-16 md:py-24 bg-white">
-      <div class="max-w-6xl mx-auto px-5">
-        <p class="text-sm font-semibold uppercase tracking-widest text-coral-dark">Nuestro espacio</p>
-        <h2 class="mt-2 font-display text-3xl md:text-4xl font-bold text-petroleo">Conoce el consultorio</h2>
-        <!-- CONFIRMAR: reemplazar con fotos reales del consultorio -->
-        <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-          <img src="https://placehold.co/600x600/0e4f5c/d8f0ea?text=Recepci%C3%B3n&font=raleway" alt="Foto de la recepción y sala de espera del consultorio" class="rounded-2xl w-full aspect-square object-cover" loading="lazy" width="600" height="600">
-          <img src="https://placehold.co/600x600/d8f0ea/0e4f5c?text=Sill%C3%B3n+dental&font=raleway" alt="Foto del sillón dental y el área de atención" class="rounded-2xl w-full aspect-square object-cover" loading="lazy" width="600" height="600">
-          <img src="https://placehold.co/600x600/f08a6c/ffffff?text=El+equipo&font=raleway" alt="Foto del equipo de odontólogos y asistentes" class="rounded-2xl w-full aspect-square object-cover" loading="lazy" width="600" height="600">
-          <img src="https://placehold.co/600x600/1a6b7a/ffffff?text=Fachada&font=raleway" alt="Foto de la entrada del local 120 en el C.C. Capital Plaza" class="rounded-2xl w-full aspect-square object-cover" loading="lazy" width="600" height="600">
+      </li>
+      <li class="relative grid grid-cols-[56px_1fr] gap-x-5 lg:block">
+        <span class="relative grid h-14 w-14 place-items-center rounded-full bg-navy font-display text-[20px] font-bold text-white">3</span>
+        <div class="lg:mt-6">
+          <h3 class="h3 text-navy">Te esperamos</h3>
+          <p class="mt-2 text-[15.5px] leading-relaxed text-muted">Subes al Nivel 2 del C.C. Capital Plaza, Local 120, y te atendemos con calma, revisando tu caso con detalle.</p>
         </div>
-      </div>
-    </section>
+      </li>
+    </ol>
+  </div>
+</section>
 
-    <!-- Ubicación y horario -->
-    <section id="ubicacion" class="py-16 md:py-24 bg-menta-soft">
-      <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-10 items-start">
-        <div>
-          <p class="text-sm font-semibold uppercase tracking-widest text-coral-dark">Visítanos</p>
-          <h2 class="mt-2 font-display text-3xl md:text-4xl font-bold text-petroleo">Ubicación y horario</h2>
-          <dl class="mt-8 space-y-6">
-            <div>
-              <dt class="text-sm font-semibold text-petroleo">Dirección</dt>
-              <dd class="mt-1 text-lg">Av. Vargas, entre carreras 19 y 20, C.C. Capital Plaza, Nivel 2, Local 120. El Centro, Barquisimeto.</dd> <!-- CONFIRMAR dirección -->
-            </div>
-            <div>
-              <dt class="text-sm font-semibold text-petroleo">Horario</dt>
-              <dd class="mt-1 text-lg">Lunes a viernes<br>8:30 am – 12:30 pm y 1:30 pm – 5:00 pm</dd> <!-- CONFIRMAR horario -->
-            </div>
-            <div>
-              <dt class="text-sm font-semibold text-petroleo">Teléfono y WhatsApp</dt>
-              <dd class="mt-1 text-lg"><a href="tel:+582514173431" class="underline decoration-coral underline-offset-4">0251-417.3431</a></dd> <!-- CONFIRMAR número -->
-            </div>
-          </dl>
-          <a href="https://www.google.com/maps/search/?api=1&query=Centro+Comercial+Capital+Plaza+Avenida+Vargas+Barquisimeto" target="_blank" rel="noopener"
-             class="mt-8 inline-flex items-center gap-2 rounded-full bg-petroleo text-white font-semibold px-6 py-3 hover:bg-petroleo-dark">
-            Cómo llegar →
-          </a>
+<!-- 7. Servicios -->
+<section id="servicios" class="scroll-mt-20 bg-white py-[72px] lg:py-[112px]">
+  <div class="mx-auto max-w-[1180px] px-5">
+    <div class="mx-auto max-w-[640px] text-center">
+      <p class="eyebrow">Servicios</p>
+      <h2 class="h2 mt-3 text-navy">Lo que hacemos por tu sonrisa</h2>
+      <p class="mt-4 text-muted">Si no sabes cuál es tu caso, llámanos y te orientamos.</p>
+    </div>
+
+    <div class="mt-12 space-y-14 lg:mt-16 lg:space-y-20">
+      <article class="grid items-center gap-6 lg:grid-cols-2 lg:gap-16">
+        <img src="img/servicio-ortodoncia.webp" width="800" height="600" loading="lazy" alt="Joven riendo con brackets en los dientes (imagen ilustrativa)" class="aspect-[4/3] w-full rounded-[24px] object-cover">
+        <div class="lg:pr-6">
+          <p class="font-display text-[14px] font-semibold text-brand">01</p>
+          <h3 class="mt-2 font-display text-[24px] font-bold leading-tight tracking-tight text-navy lg:text-[30px]">Ortodoncia</h3>
+          <p class="mt-3 text-muted">Para alinear los dientes y corregir la mordida, en chamos, jóvenes y adultos. Te explicamos el tratamiento paso a paso antes de empezar.</p>
+          <a href="tel:+582514173431" class="lnk mt-4 inline-flex min-h-[44px] items-center gap-2 font-display text-[15px] font-semibold text-brand">Consultar por ortodoncia<svg class="ic h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
         </div>
-        <div class="rounded-3xl overflow-hidden border border-petroleo/15 shadow-sm bg-white">
-          <iframe title="Mapa: C.C. Capital Plaza, Av. Vargas, Barquisimeto"
-                  src="https://www.google.com/maps?q=Centro+Comercial+Capital+Plaza,+Avenida+Vargas,+Barquisimeto&output=embed"
-                  class="w-full h-80 md:h-[26rem]" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </article>
+      <article class="grid items-center gap-6 lg:grid-cols-2 lg:gap-16">
+        <img src="img/servicio-ninos.webp" width="800" height="600" loading="lazy" alt="Niña sonriendo en el sillón dental con el pulgar arriba junto a su odontóloga (imagen ilustrativa)" class="aspect-[4/3] w-full rounded-[24px] object-cover lg:order-2">
+        <div class="lg:order-1 lg:pl-6">
+          <p class="font-display text-[14px] font-semibold text-brand">02</p>
+          <h3 class="mt-2 font-display text-[24px] font-bold leading-tight tracking-tight text-navy lg:text-[30px]">Odontopediatría</h3>
+          <p class="mt-3 text-muted">Consultas pensadas para los más pequeños de la casa, para que crezcan con dientes sanos y le pierdan el miedo al odontólogo.</p>
+          <a href="tel:+582514173431" class="lnk mt-4 inline-flex min-h-[44px] items-center gap-2 font-display text-[15px] font-semibold text-brand">Pedir cita para mi hijo<svg class="ic h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
         </div>
-      </div>
-    </section>
+      </article>
+      <article class="grid items-center gap-6 lg:grid-cols-2 lg:gap-16">
+        <img src="img/servicio-estetica.webp" width="800" height="600" loading="lazy" alt="Primer plano de una sonrisa natural con dientes blancos (imagen ilustrativa)" class="aspect-[4/3] w-full rounded-[24px] object-cover">
+        <div class="lg:pr-6">
+          <p class="font-display text-[14px] font-semibold text-brand">03</p>
+          <h3 class="mt-2 font-display text-[24px] font-bold leading-tight tracking-tight text-navy lg:text-[30px]">Estética y prótesis</h3>
+          <p class="mt-3 text-muted">Blanqueamiento dental y estética para devolverle a tu sonrisa su forma y su color, y prótesis para reponer los dientes que hacen falta para comer y hablar con comodidad.</p>
+          <a href="tel:+582514173431" class="lnk mt-4 inline-flex min-h-[44px] items-center gap-2 font-display text-[15px] font-semibold text-brand">Consultar por estética<svg class="ic h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
 
-    <!-- CTA final -->
-    <section class="py-16 md:py-24 bg-hueso">
-      <div class="max-w-4xl mx-auto px-5 text-center">
-        <h2 class="font-display text-3xl md:text-5xl font-bold text-petroleo">¿Hace cuánto no vas al odontólogo?</h2>
-        <p class="mt-4 text-lg text-slate-600">Escríbenos hoy y te decimos cuándo te podemos atender.</p>
-        <a href="https://wa.me/582514173431?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quisiera%20agendar%20una%20cita" target="_blank" rel="noopener"
-           class="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-coral hover:bg-coral-dark text-white font-semibold px-8 py-4 shadow-lg shadow-coral/30 transition">
-          Quiero mi cita
-        </a>
+    <div class="mt-16 grid gap-4 lg:mt-20 lg:grid-cols-3 lg:gap-6">
+      <div class="flex gap-4 rounded-[20px] border border-slate-200 p-5 lg:block lg:p-7">
+        <span class="grid h-12 w-12 flex-none place-items-center rounded-2xl bg-surface text-brand"><svg class="ic"><use href="#i-shield"/></svg></span>
+        <div><h3 class="h3 mt-2.5 text-navy lg:mt-5">Endodoncia</h3>
+        <p class="mt-2 text-[15.5px] leading-relaxed text-muted">El tratamiento de conducto que salva tu diente cuando duele o está muy dañado.</p></div>
       </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-petroleo-dark text-white/80 pb-24 md:pb-10 pt-10">
-    <div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row gap-6 md:items-center md:justify-between">
-      <div>
-        <p class="font-display text-xl font-bold text-white">Odontosonrisa Centro Bucal</p>
-        <p class="mt-1 text-sm">C.C. Capital Plaza, Nivel 2, Local 120 · Barquisimeto</p>
+      <div class="flex gap-4 rounded-[20px] border border-slate-200 p-5 lg:block lg:p-7">
+        <span class="grid h-12 w-12 flex-none place-items-center rounded-2xl bg-surface text-brand"><svg class="ic"><use href="#i-sparkle"/></svg></span>
+        <div><h3 class="h3 mt-2.5 text-navy lg:mt-5">Limpiezas y periodoncia</h3>
+        <p class="mt-2 text-[15.5px] leading-relaxed text-muted">Limpieza dental y cuidado de las encías para prevenir sangrado y problemas a futuro.</p></div>
       </div>
-      <div class="flex flex-wrap gap-3 text-sm">
-        <a href="https://www.instagram.com/odontosonrisacb" target="_blank" rel="noopener" class="rounded-full border border-white/25 px-4 py-2 hover:bg-white/10">Instagram @odontosonrisacb</a>
-        <a href="https://www.facebook.com/odontosonrisacb" target="_blank" rel="noopener" class="rounded-full border border-white/25 px-4 py-2 hover:bg-white/10">Facebook</a>
-        <a href="https://wa.me/582514173431?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quisiera%20agendar%20una%20cita" target="_blank" rel="noopener" class="rounded-full border border-white/25 px-4 py-2 hover:bg-white/10">WhatsApp 0251-417.3431</a>
+      <div class="flex gap-4 rounded-[20px] border border-slate-200 p-5 lg:block lg:p-7">
+        <span class="grid h-12 w-12 flex-none place-items-center rounded-2xl bg-surface text-brand"><svg class="ic"><use href="#i-cross"/></svg></span>
+        <div><h3 class="h3 mt-2.5 text-navy lg:mt-5">Cirugía y exodoncia</h3>
+        <p class="mt-2 text-[15.5px] leading-relaxed text-muted">Extracciones, incluidas las cordales, y procedimientos de cirugía bucal.</p></div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- WhatsApp flotante -->
-  <a href="https://wa.me/582514173431?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quisiera%20agendar%20una%20cita" target="_blank" rel="noopener"
-     aria-label="Escríbenos por WhatsApp"
-     class="fixed bottom-5 right-5 z-50 grid place-items-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-xl hover:scale-105 transition">
-    <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2.1 1.3 2.4 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.2 1.3z"/></svg>
-  </a>
+<!-- 8. Banda CTA con foto -->
+<section class="relative overflow-hidden bg-navy">
+  <img src="img/banda-consultorio.webp" width="1400" height="933" loading="lazy" alt="" class="absolute inset-0 h-full w-full object-cover">
+  <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-navy/60"></div>
+  <div class="relative mx-auto max-w-[1180px] px-5 py-[72px] lg:py-[100px]">
+    <div class="max-w-[620px]">
+      <div class="mb-5 h-1 w-12 rounded-full bg-accent"></div>
+      <h2 class="h2 text-white">¿Hace tiempo que no vas al odontólogo?</h2>
+      <p class="mt-4 text-white/80">Una revisión a tiempo te ahorra dolores y tratamientos más largos. Llámanos y cuadramos tu consulta de lunes a viernes.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a href="tel:+582514173431" class="btn btn-white"><svg class="ic h-5 w-5 text-brand"><use href="#i-phone"/></svg>(0251) 417.3431</a>
+        <a href="https://wa.me/582514173431?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20pedir%20una%20cita." class="btn btn-wa"><svg class="icf h-5 w-5"><use href="#i-wa"/></svg>Escribir por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. Preguntas frecuentes -->
+<section id="preguntas" class="scroll-mt-20 bg-white py-[72px] lg:py-[112px]">
+  <div class="mx-auto grid max-w-[1180px] gap-10 px-5 lg:grid-cols-[1fr_1.35fr] lg:gap-20">
+    <div>
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2 class="h2 mt-3 text-navy">Antes de tu cita</h2>
+      <p class="mt-4 text-muted">¿Te quedó alguna duda? Llámanos y te la aclaramos.</p>
+      <img src="img/instrumental.webp" width="800" height="600" loading="lazy" alt="Manos con guantes azules ordenando instrumental dental esterilizado (imagen ilustrativa)" class="mt-8 hidden aspect-[4/3] w-full rounded-[24px] object-cover lg:block">
+    </div>
+    <div class="divide-y divide-slate-200 border-y border-slate-200">
+      <details class="group" open>
+        <summary class="flex min-h-[68px] items-center justify-between gap-4 py-4 font-display text-[16.5px] font-semibold text-navy">¿Atienden a niños?<span class="grid h-9 w-9 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic pm h-[18px] w-[18px]"><use href="#i-plus"/></svg></span></summary>
+        <p class="pb-6 pr-12 text-[15.5px] leading-relaxed text-muted">Sí. Tenemos odontopediatría, con consultas pensadas para que los chamos se sientan cómodos desde la primera visita.</p>
+      </details>
+      <details class="group">
+        <summary class="flex min-h-[68px] items-center justify-between gap-4 py-4 font-display text-[16.5px] font-semibold text-navy">¿Cómo pido una cita?<span class="grid h-9 w-9 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic pm h-[18px] w-[18px]"><use href="#i-plus"/></svg></span></summary>
+        <p class="pb-6 pr-12 text-[15.5px] leading-relaxed text-muted">Llámanos al (0251) 417.3431 de lunes a viernes, de 8:30 am a 12:30 pm o de 1:30 pm a 5:00 pm, y te damos día y hora.</p>
+      </details>
+      <details class="group">
+        <summary class="flex min-h-[68px] items-center justify-between gap-4 py-4 font-display text-[16.5px] font-semibold text-navy">Tengo dolor, ¿qué hago?<span class="grid h-9 w-9 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic pm h-[18px] w-[18px]"><use href="#i-plus"/></svg></span></summary>
+        <p class="pb-6 pr-12 text-[15.5px] leading-relaxed text-muted">Llámanos y cuéntanos qué sientes. Te orientamos y buscamos el espacio más cercano para revisarte dentro de nuestro horario.</p>
+      </details>
+      <details class="group">
+        <summary class="flex min-h-[68px] items-center justify-between gap-4 py-4 font-display text-[16.5px] font-semibold text-navy">¿Cuánto cuesta una consulta?<span class="grid h-9 w-9 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic pm h-[18px] w-[18px]"><use href="#i-plus"/></svg></span></summary>
+        <p class="pb-6 pr-12 text-[15.5px] leading-relaxed text-muted">Depende de lo que necesites. Llámanos, cuéntanos tu caso y te damos la información actualizada.</p>
+      </details>
+      <details class="group">
+        <summary class="flex min-h-[68px] items-center justify-between gap-4 py-4 font-display text-[16.5px] font-semibold text-navy">¿Dónde quedan exactamente?<span class="grid h-9 w-9 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic pm h-[18px] w-[18px]"><use href="#i-plus"/></svg></span></summary>
+        <p class="pb-6 pr-12 text-[15.5px] leading-relaxed text-muted">En el C.C. Capital Plaza, Nivel 2, Local 120, en la Av. Vargas entre carreras 19 y 20, en el centro de Barquisimeto.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Ubicación y horario -->
+<section id="ubicacion" class="scroll-mt-20 bg-surface py-[72px] lg:py-[112px]">
+  <div class="mx-auto max-w-[1180px] px-5">
+    <div class="max-w-[640px]">
+      <p class="eyebrow">Ubicación y horario</p>
+      <h2 class="h2 mt-3 text-navy">Te esperamos en el C.C. Capital Plaza</h2>
+    </div>
+    <div class="mt-10 overflow-hidden rounded-[24px] bg-white shadow-soft lg:mt-14 lg:grid lg:grid-cols-[1.4fr_1fr]">
+      <div class="relative h-[300px] bg-[#D3EFEC] lg:h-auto lg:min-h-[500px]">
+        <div class="absolute inset-0 grid place-items-center px-6 text-center">
+          <div>
+            <span class="mx-auto grid h-14 w-14 place-items-center rounded-full bg-white text-brand shadow-soft"><svg class="ic h-7 w-7"><use href="#i-pin"/></svg></span>
+            <p class="mt-3 font-display text-[15px] font-semibold text-navy">C.C. Capital Plaza · Av. Vargas</p>
+            <p class="text-[14px] text-muted">El Centro, Barquisimeto</p>
+          </div>
+        </div>
+        <iframe title="Mapa: Odontosonrisa Centro Bucal, C.C. Capital Plaza, Av. Vargas, Barquisimeto" src="https://maps.google.com/maps?q=C.C.%20Capital%20Plaza%2C%20Av.%20Vargas%2C%20Barquisimeto%2C%20Lara&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="absolute inset-0 h-full w-full border-0"></iframe>
+      </div>
+      <div class="p-6 sm:p-8 lg:p-10">
+        <div class="flex gap-4">
+          <span class="hidden h-11 w-11 flex-none place-items-center rounded-full bg-surface text-brand sm:grid"><svg class="ic h-5 w-5"><use href="#i-pin"/></svg></span>
+          <div>
+            <h3 class="h3 text-navy">Dirección</h3>
+            <p class="mt-1 text-[15.5px] leading-relaxed text-muted">Av. Vargas, entre carreras 19 y 20, C.C. Capital Plaza, Nivel 2, Local 120. El Centro, Barquisimeto.</p>
+          </div>
+        </div>
+        <div class="mt-7 flex gap-4 border-t border-slate-100 pt-7">
+          <span class="hidden h-11 w-11 flex-none place-items-center rounded-full bg-surface text-brand sm:grid"><svg class="ic h-5 w-5"><use href="#i-clock"/></svg></span>
+          <div class="flex-1">
+            <h3 class="h3 text-navy">Horario</h3>
+            <p class="mt-1 text-[15.5px] text-muted">Lunes a viernes</p>
+            <div class="mt-3 grid grid-cols-2 gap-3">
+              <div class="rounded-xl bg-surface px-4 py-3"><p class="text-[13px] font-semibold uppercase tracking-[.05em] text-muted">Mañana</p><p class="whitespace-nowrap font-display text-[15px] font-semibold text-navy">8:30 – 12:30</p></div>
+              <div class="rounded-xl bg-surface px-4 py-3"><p class="text-[13px] font-semibold uppercase tracking-[.05em] text-muted">Tarde</p><p class="whitespace-nowrap font-display text-[15px] font-semibold text-navy">1:30 – 5:00</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 grid gap-3">
+          <a href="https://www.google.com/maps/search/?api=1&query=C.C.%20Capital%20Plaza%2C%20Av.%20Vargas%2C%20Barquisimeto" class="btn btn-brand w-full"><svg class="ic h-5 w-5"><use href="#i-nav"/></svg>Cómo llegar</a>
+          <a href="tel:+582514173431" class="btn btn-line w-full"><svg class="ic h-5 w-5 text-brand"><use href="#i-phone"/></svg>(0251) 417.3431</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- 11. CTA final + pie -->
+<footer class="bg-navy text-white">
+  <div class="mx-auto max-w-[1180px] px-5 py-[72px] lg:py-[104px]">
+    <div class="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+      <div class="max-w-[620px]">
+        <div class="mb-5 h-1 w-12 rounded-full bg-accent"></div>
+        <h2 class="h2">Tu próxima consulta empieza con una llamada</h2>
+        <p class="mt-4 text-white/80">Cuéntanos qué necesitas y te damos día y hora, de lunes a viernes.</p>
+      </div>
+      <div class="flex flex-col gap-3 sm:flex-row">
+        <a href="tel:+582514173431" class="btn btn-white"><svg class="ic h-5 w-5 text-brand"><use href="#i-phone"/></svg>Llamar ahora</a>
+        <a href="https://wa.me/582514173431?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20pedir%20una%20cita." class="btn btn-line-light"><svg class="icf h-5 w-5 text-wa"><use href="#i-wa"/></svg>WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="mt-14 grid gap-10 border-t border-white/10 pt-12 md:grid-cols-3">
+      <div>
+        <div class="flex items-center gap-3">
+          <span class="grid h-10 w-10 place-items-center rounded-full bg-white" aria-hidden="true"><span class="h-4 w-4 rounded-full border-[3.5px] border-brand"></span></span>
+          <span class="leading-tight"><span class="block font-display text-[17px] font-bold">Odontosonrisa</span><span class="block text-[13px] text-white/70">Centro Bucal</span></span>
+        </div>
+        <p class="mt-4 max-w-[300px] text-[15px] text-white/70">Odontología integral, estética y cirugía en el centro de Barquisimeto.</p>
+      </div>
+      <div class="space-y-2 text-[15px]">
+        <p class="font-display text-[13px] font-semibold uppercase tracking-[.06em] text-accent">Contacto</p>
+        <p class="flex gap-3 pb-1 text-white/80"><svg class="ic mt-0.5 h-5 w-5 text-accent"><use href="#i-pin"/></svg>C.C. Capital Plaza, Nivel 2, Local 120. Av. Vargas, Barquisimeto.</p>
+        <a href="tel:+582514173431" class="lnk-light flex min-h-[44px] items-center gap-3 text-white/90"><svg class="ic h-5 w-5 text-accent"><use href="#i-phone"/></svg>(0251) 417.3431</a>
+        <a href="https://www.instagram.com/odontosonrisacb/" class="lnk-light flex min-h-[44px] items-center gap-3 text-white/90"><svg class="ic h-5 w-5 text-accent"><use href="#i-ig"/></svg>@odontosonrisacb</a>
+        <a href="https://www.facebook.com/odontosonrisacb" class="lnk-light flex min-h-[44px] items-center gap-3 text-white/90"><svg class="ic h-5 w-5 text-accent"><use href="#i-fb"/></svg>Odontosonrisa en Facebook</a>
+      </div>
+      <div class="space-y-3 text-[15px]">
+        <p class="font-display text-[13px] font-semibold uppercase tracking-[.06em] text-accent">Horario</p>
+        <p class="text-white/80">Lunes a viernes</p>
+        <p class="text-white/80">Mañana <span class="font-semibold text-white">8:30 am – 12:30 pm</span></p>
+        <p class="text-white/80">Tarde <span class="font-semibold text-white">1:30 pm – 5:00 pm</span></p>
+      </div>
+    </div>
+    <p class="mt-12 border-t border-white/10 pb-[84px] pt-6 text-[13px] text-white/60 lg:pb-0">© 2026 Odontosonrisa Centro Bucal · Barquisimeto, Lara · Imágenes ilustrativas.</p>
+  </div>
+</footer>
+
+<!-- 12. Barra fija inferior (móvil) -->
+<div class="fixed inset-x-0 bottom-0 z-50 grid grid-cols-[1.55fr_1fr] gap-2 border-t border-slate-200 bg-white/95 px-3 pt-2 backdrop-blur lg:hidden" style="padding-bottom:max(8px,env(safe-area-inset-bottom))">
+  <a href="tel:+582514173431" class="btn btn-brand h-12 px-3"><svg class="ic h-5 w-5"><use href="#i-phone"/></svg>Llamar ahora</a>
+  <a href="https://wa.me/582514173431?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20pedir%20una%20cita." class="btn btn-wa h-12 px-3"><svg class="icf h-5 w-5"><use href="#i-wa"/></svg>WhatsApp</a>
+</div>
+
 </body>
 </html>

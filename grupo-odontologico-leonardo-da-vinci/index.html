@@ -1,252 +1,407 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grupo Odontológico Leonardo da Vinci | Diseño de sonrisa en Barquisimeto</title>
-  <meta name="description" content="Clínica de odontología estética en Barquisimeto, especialista en diseño de sonrisa y rehabilitación oral. Blanqueamientos, carillas de resina sin desgaste dental y más. Escríbenos por WhatsApp.">
-  <meta property="og:title" content="Grupo Odontológico Leonardo da Vinci">
-  <meta property="og:description" content="Diseño de sonrisa, rehabilitación oral, blanqueamientos y carillas de resina sin desgaste dental en el centro de Barquisimeto.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_VE">
-  <meta property="og:image" content="https://placehold.co/1200x630/12403f/f7f3ec?text=Leonardo+da+Vinci%0AOdontolog%C3%ADa+est%C3%A9tica&font=playfair-display">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2312403f'/><path d='M20 18c-5 0-8 4-8 9 0 6 3 10 4 16 1 5 2 9 5 9s3-6 5-10c1-2 2-3 6-3s5 1 6 3c2 4 2 10 5 10s4-4 5-9c1-6 4-10 4-16 0-5-3-9-8-9-4 0-6 2-12 2s-8-2-12-2z' fill='%23f7f3ec'/></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            pino: { 50: '#eef6f5', 100: '#d5e9e6', 600: '#1d5e5b', 800: '#12403f', 900: '#0b2a29' },
-            marfil: '#f7f3ec',
-            oro: { 400: '#d4b072', 500: '#c19a56', 600: '#a27f3f' },
-          },
-          fontFamily: {
-            serif: ['Fraunces', 'Georgia', 'serif'],
-            sans: ['Manrope', 'system-ui', 'sans-serif'],
-          },
-        },
-      },
-    };
-  </script>
-  <style>
-    html { scroll-behavior: smooth; }
-    .grano { background-image: radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px); background-size: 18px 18px; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grupo Odontológico Leonardo da Vinci · Estética dental en Barquisimeto</title>
+<meta name="description" content="Clínica de odontología estética en el centro de Barquisimeto (Av. 20 con Calle 10). Diseño de sonrisa, carillas de resina sin desgaste, blanqueamientos y rehabilitación oral. Escríbenos por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_VE">
+<meta property="og:title" content="Grupo Odontológico Leonardo da Vinci · Barquisimeto">
+<meta property="og:description" content="Diseño de sonrisa, carillas de resina sin desgaste, blanqueamientos y rehabilitación oral. Av. 20 con Calle 10, Centro Empresarial Leonardo Da Vinci.">
+<meta property="og:image" content="img/hero.webp">
+<meta name="theme-color" content="#1A1F4B">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%233949AB'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Arial,sans-serif' font-size='24' font-weight='700' fill='%23fff'%3EDV%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="image" href="img/hero-mobile.webp" media="(max-width: 1023px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero.webp" media="(min-width: 1024px)" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&family=Outfit:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { brand:'#3949AB', deep:'#1A1F4B', sky:'#4FC3F7', surface:'#F2F5FC', ink:'#1F2A37', muted:'#5B6B7D', wa:'#25D366' },
+  fontFamily: { display:['Outfit','system-ui','sans-serif'], sans:['Mulish','system-ui','sans-serif'] },
+  boxShadow: { soft:'0 12px 40px rgba(26,31,75,.10)', card:'0 4px 18px rgba(26,31,75,.07)' }
+} } }
+</script>
+<style>
+  body{font-family:Mulish,system-ui,sans-serif;color:#1F2A37;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .h1,.h2,.h3{font-family:Outfit,system-ui,sans-serif;font-weight:600;letter-spacing:-.02em;color:#1A1F4B;text-wrap:balance}
+  .h1{font-size:36px;line-height:1.08}
+  .h2{font-size:26px;line-height:1.18}
+  .h3{font-size:19px;line-height:1.3;font-weight:500;letter-spacing:-.01em}
+  .eyebrow{font-family:Outfit,system-ui,sans-serif;font-size:14px;font-weight:500;color:#3949AB;display:inline-flex;align-items:center;gap:.6rem}
+  .eyebrow::before{content:"";width:22px;height:2px;border-radius:2px;background:#4FC3F7}
+  .lead{font-size:17px;line-height:1.65}
+  @media (min-width:1024px){
+    body{font-size:17px;line-height:1.7}
+    .h1{font-size:56px;line-height:1.05}
+    .h2{font-size:40px;line-height:1.12}
+    .h3{font-size:22px}
+    .lead{font-size:19px}
+    section[id]{scroll-margin-top:88px}
+  }
+  :where(.ic){width:22px;height:22px}
+  .ic{fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}
+  :where(.icf){width:22px;height:22px}
+  .icf{fill:currentColor;flex:none}
+  :where(.btn){display:inline-flex;height:52px;padding:0 1.6rem}
+  .btn{align-items:center;justify-content:center;gap:.55rem;border-radius:999px;font-size:16px;font-weight:600;line-height:1;white-space:nowrap;transition:background-color .15s,color .15s,border-color .15s,transform .12s}
+  .btn:active{transform:scale(.97)}
+  .btn-wa{background:#25D366;color:#1A1F4B}
+  .btn-brand{background:#3949AB;color:#fff}
+  .btn-line{border:1.5px solid rgba(57,73,171,.35);color:#3949AB;background:#fff}
+  .btn-line-light{border:1.5px solid rgba(255,255,255,.55);color:#fff}
+  @media (hover:hover) and (pointer:fine){
+    .btn-wa:hover{background:#1EBE5A}
+    .btn-brand:hover{background:#1A1F4B}
+    .btn-line:hover{background:#F2F5FC;border-color:#3949AB}
+    .btn-line-light:hover{background:rgba(255,255,255,.1)}
+    .lnk:hover{color:#3949AB}
+    .lnk-light:hover{color:#4FC3F7}
+  }
+  .hero-in{animation:heroIn 560ms cubic-bezier(0.23,1,0.32,1) both}
+  @keyframes heroIn{from{opacity:0;transform:translateY(14px)}}
+  @media (prefers-reduced-motion:reduce){
+    .hero-in{animation:none}
+    .btn,.btn:active{transform:none;transition:background-color .15s}
+  }
+  summary{list-style:none;cursor:pointer}
+  summary::-webkit-details-marker{display:none}
+  details[open] .plus{transform:rotate(45deg)}
+</style>
 </head>
-<body class="bg-marfil text-pino-900 font-sans antialiased">
+<body class="bg-white">
 
-  <!-- Barra superior -->
-  <header class="sticky top-0 z-40 bg-marfil/90 backdrop-blur border-b border-pino-900/10">
-    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
-      <a href="#inicio" class="flex items-center gap-2.5">
-        <span class="w-9 h-9 rounded-xl bg-pino-800 grid place-items-center">
-          <svg viewBox="0 0 64 64" class="w-6 h-6" aria-hidden="true"><path d="M20 18c-5 0-8 4-8 9 0 6 3 10 4 16 1 5 2 9 5 9s3-6 5-10c1-2 2-3 6-3s5 1 6 3c2 4 2 10 5 10s4-4 5-9c1-6 4-10 4-16 0-5-3-9-8-9-4 0-6 2-12 2s-8-2-12-2z" fill="#f7f3ec"/></svg>
-        </span>
-        <span class="leading-tight">
-          <span class="block font-serif font-semibold text-[15px]">Leonardo da Vinci</span>
-          <span class="block text-[11px] tracking-[.18em] uppercase text-pino-600">Grupo Odontológico</span>
-        </span>
-      </a>
-      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-pino-900/80">
-        <a href="#servicios" class="hover:text-pino-600">Servicios</a>
-        <a href="#por-que" class="hover:text-pino-600">Por qué nosotros</a>
-        <a href="#ubicacion" class="hover:text-pino-600">Ubicación</a>
-      </nav>
-      <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-2 bg-pino-800 text-marfil text-sm font-semibold px-4 py-2.5 rounded-full hover:bg-pino-600 transition">Agendar cita</a>
+<!-- Iconos lineales (sprite) -->
+<svg style="position:absolute;width:0;height:0" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-nav" viewBox="0 0 24 24"><path d="M3 11 22 2l-9 19-2-8-8-2z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.5h-.01a9.5 9.5 0 0 1-4.84-1.33l-.35-.21-3.6.94.96-3.5-.23-.36a9.46 9.46 0 0 1-1.45-5.05c0-5.24 4.27-9.5 9.52-9.5 2.54 0 4.93.99 6.72 2.79a9.43 9.43 0 0 1 2.78 6.72c0 5.24-4.27 9.5-9.5 9.5zm8.08-17.58A11.36 11.36 0 0 0 12.05.58C5.75.58.63 5.7.63 12c0 2.01.53 3.98 1.53 5.71L.53 23.42l5.85-1.53a11.4 11.4 0 0 0 5.66 1.44h.01c6.3 0 11.42-5.12 11.42-11.42 0-3.05-1.19-5.92-3.35-8.08z"/></symbol>
+</svg>
+
+<!-- 1. Cabecera -->
+<header class="relative z-40 border-b border-slate-100 bg-white lg:sticky lg:top-0 lg:bg-white/95 lg:backdrop-blur">
+  <div class="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-5 lg:h-[76px]">
+    <a href="#inicio" class="flex min-h-[44px] items-center gap-3" aria-label="Grupo Odontológico Leonardo da Vinci, inicio">
+      <span class="grid h-10 w-10 place-items-center rounded-full bg-brand font-display text-[15px] font-semibold tracking-wide text-white">DV</span>
+      <span class="leading-tight">
+        <span class="block font-display text-[17px] font-semibold tracking-tight text-deep">Leonardo da Vinci</span>
+        <span class="block text-[12px] text-muted">Grupo Odontológico<span class="hidden lg:inline"> · Estética dental</span></span>
+      </span>
+    </a>
+    <nav class="hidden items-center gap-8 text-[15px] font-semibold text-ink lg:flex" aria-label="Principal">
+      <a class="lnk" href="#tratamientos">Tratamientos</a>
+      <a class="lnk" href="#primera-visita">Primera visita</a>
+      <a class="lnk" href="#preguntas">Preguntas</a>
+      <a class="lnk" href="#ubicacion">Ubicación</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="tel:+584245778159" class="lnk hidden items-center gap-2 text-[15px] font-semibold text-deep lg:inline-flex"><svg class="ic h-[18px] w-[18px] text-brand"><use href="#i-phone"/></svg>(0424) 577.8159</a>
+      <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20valoraci%C3%B3n." class="btn btn-brand hidden h-11 px-5 lg:inline-flex">Agendar valoración</a>
+      <a href="tel:+584245778159" class="grid h-11 w-11 place-items-center rounded-full border border-brand/25 text-brand lg:hidden" aria-label="Llamar al (0424) 577.8159"><svg class="ic h-5 w-5"><use href="#i-phone"/></svg></a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main>
-    <!-- Hero -->
-    <section id="inicio" class="relative overflow-hidden bg-pino-800 text-marfil">
-      <div class="absolute inset-0 grano"></div>
-      <div class="absolute -right-24 -top-24 w-80 h-80 rounded-full bg-oro-500/20 blur-3xl"></div>
-      <div class="relative max-w-6xl mx-auto px-5 pt-14 pb-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+<main>
+<!-- 2. Hero -->
+<section id="inicio" class="relative lg:bg-surface lg:py-16">
+  <div class="relative lg:mx-auto lg:min-h-[620px] lg:max-w-[1200px] lg:px-5">
+    <div class="relative h-[320px] overflow-hidden sm:h-[400px] lg:absolute lg:right-5 lg:top-0 lg:h-[620px] lg:w-[64%] lg:rounded-[32px]">
+      <picture>
+        <source media="(max-width: 1023px)" srcset="img/hero-mobile.webp" width="750" height="660">
+        <img src="img/hero.webp" width="1600" height="1400" fetchpriority="high" alt="Mujer de cabello rizado riendo con una sonrisa natural, al aire libre (imagen ilustrativa)" class="absolute inset-0 h-full w-full object-cover object-[center_30%] lg:object-[60%_15%]">
+      </picture>
+    </div>
+
+    <div class="relative -mt-7 rounded-t-[28px] bg-white px-5 pt-7 lg:absolute lg:left-5 lg:top-1/2 lg:mt-0 lg:w-[560px] lg:-translate-y-1/2 lg:rounded-[28px] lg:p-12 lg:shadow-soft">
+      <div class="hero-in">
+        <p class="flex items-start gap-2 text-[14px] font-semibold leading-snug text-brand"><svg class="ic mt-px h-[18px] w-[18px]"><use href="#i-pin"/></svg><span>Av. 20 con Calle 10 · Centro Empresarial Leonardo Da Vinci</span></p>
+        <h1 class="h1 mt-3 lg:mt-5">Diseño de sonrisa en el centro de Barquisimeto</h1>
+        <p class="mt-3 text-muted lg:lead lg:mt-5">Carillas de resina sin desgaste, blanqueamientos y rehabilitación oral. Escríbenos y te orientamos.</p>
+        <div class="mt-6 grid grid-cols-[1fr_auto] gap-3 sm:flex lg:mt-8">
+          <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20valoraci%C3%B3n." class="btn btn-wa px-4 sm:px-6"><svg class="icf"><use href="#i-wa"/></svg><span class="lg:hidden">Agendar cita</span><span class="hidden lg:inline">Agendar por WhatsApp</span></a>
+          <a href="tel:+584245778159" class="btn btn-line px-5"><svg class="ic h-5 w-5"><use href="#i-phone"/></svg>Llamar</a>
+        </div>
+        <p class="mt-8 hidden items-center gap-3 border-t border-slate-100 pt-6 text-[15px] text-muted lg:flex"><svg class="ic h-5 w-5 text-brand"><use href="#i-clock"/></svg>Lunes a viernes · 8:00 am – 12:00 pm y 2:00 pm – 5:00 pm</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Barra de acciones (móvil) -->
+<nav class="mt-7 grid grid-cols-3 gap-2 px-5 lg:hidden" aria-label="Acciones rápidas">
+  <a href="https://www.google.com/maps/search/?api=1&query=Centro%20Empresarial%20Leonardo%20Da%20Vinci%2C%20Av.%2020%20con%20Calle%2010%2C%20Barquisimeto" class="flex h-[84px] flex-col items-center justify-center gap-2 rounded-2xl bg-surface text-[14px] font-semibold text-deep"><svg class="ic text-brand"><use href="#i-nav"/></svg>Cómo llegar</a>
+  <a href="tel:+584245778159" class="flex h-[84px] flex-col items-center justify-center gap-2 rounded-2xl bg-surface text-[14px] font-semibold text-deep"><svg class="ic text-brand"><use href="#i-phone"/></svg>Llamar</a>
+  <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20valoraci%C3%B3n." class="flex h-[84px] flex-col items-center justify-center gap-2 rounded-2xl bg-surface text-[14px] font-semibold text-deep"><svg class="icf text-[#128C4B]"><use href="#i-wa"/></svg>WhatsApp</a>
+</nav>
+
+<!-- 4. Bienvenida -->
+<section class="bg-white py-[72px] lg:py-[120px]">
+  <div class="mx-auto grid max-w-[1200px] items-center gap-10 px-5 lg:grid-cols-[1fr_1.05fr] lg:gap-20">
+    <div>
+      <p class="eyebrow">Bienvenido</p>
+      <h2 class="h2 mt-4">Una clínica dedicada a la estética de tu sonrisa</h2>
+      <blockquote class="mt-7 border-l-[3px] border-sky pl-5">
+        <p class="font-display text-[20px] font-medium leading-snug text-brand lg:text-[24px]">“Clínica de odontología estética especialista en diseño de sonrisa y rehabilitación oral.”</p>
+      </blockquote>
+      <p class="mt-6 text-muted">Ofrecemos blanqueamientos dentales, carillas de resina sin desgaste dental y tratamientos con esmalte dental. Nos consigues en pleno centro de Barquisimeto, en la Av. 20 con Calle 10.</p>
+      <dl class="mt-8 grid gap-4 sm:grid-cols-2">
+        <div class="flex gap-3">
+          <span class="grid h-11 w-11 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic h-5 w-5"><use href="#i-building"/></svg></span>
+          <div><dt class="text-[13px] text-muted">Dónde</dt><dd class="font-semibold leading-snug text-deep">C. E. Leonardo Da Vinci, nivel&nbsp;1, ofic.&nbsp;1</dd></div>
+        </div>
+        <div class="flex gap-3">
+          <span class="grid h-11 w-11 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic h-5 w-5"><use href="#i-clock"/></svg></span>
+          <div><dt class="text-[13px] text-muted">Cuándo</dt><dd class="font-semibold leading-snug text-deep">Lunes a viernes, mañana y tarde</dd></div>
+        </div>
+      </dl>
+    </div>
+    <div class="relative">
+      <img src="img/bienvenida.webp" width="1000" height="667" loading="lazy" alt="Odontóloga con guantes azules preparando la lámpara del sillón para atender a una paciente (imagen ilustrativa)" class="aspect-[4/3] w-full rounded-[28px] object-cover lg:aspect-[5/4]">
+    </div>
+  </div>
+</section>
+
+<!-- 5. Tratamientos -->
+<section id="tratamientos" class="bg-surface py-[72px] lg:py-[120px]">
+  <div class="mx-auto max-w-[1200px] px-5">
+    <div class="max-w-[680px]">
+      <p class="eyebrow">Tratamientos</p>
+      <h2 class="h2 mt-4">Lo que hacemos, explicado en simple</h2>
+      <p class="mt-4 text-muted">Cada sonrisa es distinta. En la valoración te decimos cuál de estos tratamientos aplica a tu caso.</p>
+    </div>
+
+    <div class="mt-12 space-y-16 lg:mt-20 lg:space-y-24">
+      <article class="grid items-center gap-7 lg:grid-cols-2 lg:gap-20">
+        <img src="img/tratamiento-diseno.webp" width="1000" height="800" loading="lazy" alt="Odontólogo explicando a una paciente en el sillón una radiografía dental en la pantalla (imagen ilustrativa)" class="aspect-[5/4] w-full rounded-[28px] object-cover">
         <div>
-          <p class="inline-flex items-center gap-2 text-xs font-semibold tracking-[.2em] uppercase text-oro-400">
-            <span class="w-6 h-px bg-oro-400"></span> Odontología estética · Barquisimeto
-          </p>
-          <h1 class="mt-5 font-serif text-[2.6rem] leading-[1.05] sm:text-5xl md:text-6xl font-semibold">
-            Tu sonrisa,<br><em class="font-normal text-oro-400">diseñada</em> con arte.
-          </h1>
-          <p class="mt-6 text-lg text-marfil/80 max-w-md">
-            Somos una clínica de odontología estética especialista en diseño de sonrisa y rehabilitación oral, en pleno centro de Barquisimeto.
-          </p>
-          <div class="mt-9 flex flex-col sm:flex-row gap-3">
-            <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" class="inline-flex justify-center items-center gap-2.5 bg-oro-500 text-pino-900 font-bold px-7 py-4 rounded-full hover:bg-oro-400 transition shadow-lg shadow-black/20">
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
-              Escríbenos por WhatsApp
-            </a>
-            <a href="#servicios" class="inline-flex justify-center items-center px-7 py-4 rounded-full border border-marfil/30 font-semibold hover:bg-marfil/10 transition">Ver servicios</a>
+          <p class="inline-flex h-8 items-center rounded-full bg-white px-3 font-display text-[14px] font-medium text-brand">Tratamiento 01</p>
+          <h3 class="h3 mt-4 text-[24px] leading-tight lg:text-[30px]">Diseño de sonrisa</h3>
+          <p class="mt-4 rounded-2xl bg-white p-5 text-ink"><span class="font-semibold text-brand">En simple:</span> es planificar cómo se verá tu sonrisa —forma, tamaño y color de los dientes— en armonía con tu cara, antes de empezar cualquier tratamiento.</p>
+          <p class="mt-4 text-muted">Es nuestra especialidad: conversamos sobre lo que te gustaría cambiar y armamos un plan a tu medida.</p>
+          <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n%20sobre%20dise%C3%B1o%20de%20sonrisa." class="lnk mt-3 inline-flex min-h-[44px] items-center gap-2 font-semibold text-brand">Preguntar por diseño de sonrisa<svg class="ic h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+
+      <article class="grid items-center gap-7 lg:grid-cols-2 lg:gap-20">
+        <img src="img/tratamiento-carillas.webp" width="1000" height="800" loading="lazy" alt="Joven de cabello largo riendo con los ojos cerrados, al aire libre (imagen ilustrativa)" class="aspect-[5/4] w-full rounded-[28px] object-cover lg:order-2">
+        <div class="lg:order-1">
+          <p class="inline-flex h-8 items-center rounded-full bg-white px-3 font-display text-[14px] font-medium text-brand">Tratamiento 02</p>
+          <h3 class="h3 mt-4 text-[24px] leading-tight lg:text-[30px]">Carillas de resina sin desgaste</h3>
+          <p class="mt-4 rounded-2xl bg-white p-5 text-ink"><span class="font-semibold text-brand">En simple:</span> son capas finas de resina del color del diente que se colocan sobre su superficie para mejorar la forma o el color, sin limar el diente.</p>
+          <p class="mt-4 text-muted">“Sin desgaste” quiere decir que se conserva tu diente natural tal como está.</p>
+          <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n%20sobre%20carillas%20de%20resina." class="lnk mt-3 inline-flex min-h-[44px] items-center gap-2 font-semibold text-brand">Preguntar por carillas<svg class="ic h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+
+      <article class="grid items-center gap-7 lg:grid-cols-2 lg:gap-20">
+        <img src="img/tratamiento-blanqueamiento.webp" width="1000" height="800" loading="lazy" alt="Hombre joven sonriendo ampliamente sobre un fondo claro (imagen ilustrativa)" class="aspect-[5/4] w-full rounded-[28px] object-cover">
+        <div>
+          <p class="inline-flex h-8 items-center rounded-full bg-white px-3 font-display text-[14px] font-medium text-brand">Tratamiento 03</p>
+          <h3 class="h3 mt-4 text-[24px] leading-tight lg:text-[30px]">Blanqueamiento dental</h3>
+          <p class="mt-4 rounded-2xl bg-white p-5 text-ink"><span class="font-semibold text-brand">En simple:</span> es aclarar el tono de tus dientes con un producto que se aplica bajo el control del odontólogo.</p>
+          <p class="mt-4 text-muted">Antes revisamos tus dientes y encías para saber si es una buena opción para ti.</p>
+          <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n%20sobre%20blanqueamiento%20dental." class="lnk mt-3 inline-flex min-h-[44px] items-center gap-2 font-semibold text-brand">Preguntar por blanqueamiento<svg class="ic h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+
+      <article class="grid items-center gap-7 lg:grid-cols-2 lg:gap-20">
+        <img src="img/tratamiento-rehabilitacion.webp" width="1000" height="800" loading="lazy" alt="Señora de cabello blanco sonriendo junto a una planta (imagen ilustrativa)" class="aspect-[5/4] w-full rounded-[28px] object-cover lg:order-2">
+        <div class="lg:order-1">
+          <p class="inline-flex h-8 items-center rounded-full bg-white px-3 font-display text-[14px] font-medium text-brand">Tratamiento 04</p>
+          <h3 class="h3 mt-4 text-[24px] leading-tight lg:text-[30px]">Rehabilitación oral</h3>
+          <p class="mt-4 rounded-2xl bg-white p-5 text-ink"><span class="font-semibold text-brand">En simple:</span> es devolverle función y estética a tu boca cuando hay dientes dañados, desgastados o perdidos, para que vuelvas a masticar y sonreír cómodo.</p>
+          <p class="mt-4 text-muted">Junto al diseño de sonrisa, es lo que más hacemos.</p>
+          <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n%20sobre%20rehabilitaci%C3%B3n%20oral." class="lnk mt-3 inline-flex min-h-[44px] items-center gap-2 font-semibold text-brand">Preguntar por rehabilitación<svg class="ic h-[18px] w-[18px]"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+
+    <!-- CONFIRMAR: en qué consisten exactamente los "tratamientos con esmalte dental" -->
+    <div class="mt-16 flex flex-col gap-5 rounded-[24px] bg-white p-6 shadow-card sm:flex-row sm:items-center lg:mt-24 lg:p-8">
+      <span class="grid h-14 w-14 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic h-7 w-7"><use href="#i-shield"/></svg></span>
+      <div class="flex-1">
+        <h3 class="h3">También: tratamientos con esmalte dental</h3>
+        <p class="mt-1 text-[15px] text-muted">Cuidados enfocados en proteger y conservar el esmalte de tus dientes. Pregúntanos si es para ti.</p>
+      </div>
+      <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n%20sobre%20los%20tratamientos%20con%20esmalte%20dental." class="btn btn-line w-full sm:w-auto">Preguntar</a>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Banda CTA con foto (dividida) -->
+<section class="bg-white lg:py-[120px]">
+  <div class="mx-auto max-w-[1200px] lg:px-5">
+    <div class="grid overflow-hidden bg-deep lg:grid-cols-2 lg:rounded-[32px]">
+      <img src="img/banda.webp" width="1000" height="800" loading="lazy" alt="Espejo dental en primer plano con un sillón odontológico desenfocado al fondo (imagen ilustrativa)" class="h-[220px] w-full object-cover sm:h-[300px] lg:h-full">
+      <div class="px-5 py-14 lg:px-14 lg:py-20">
+        <div class="h-1 w-12 rounded-full bg-sky"></div>
+        <h2 class="h2 mt-6 text-white">¿No sabes qué tratamiento va contigo?</h2>
+        <p class="mt-4 text-[#C9D1F0]">Cuéntanos qué te gustaría mejorar de tu sonrisa y cuadramos una valoración, de lunes a viernes.</p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20saber%20qu%C3%A9%20tratamiento%20me%20conviene." class="btn btn-wa"><svg class="icf"><use href="#i-wa"/></svg>Escríbenos por WhatsApp</a>
+          <a href="tel:+584245778159" class="btn btn-line-light"><svg class="ic h-5 w-5"><use href="#i-phone"/></svg>(0424) 577.8159</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Primera visita -->
+<section id="primera-visita" class="bg-white py-[72px] lg:pb-[120px] lg:pt-0">
+  <div class="mx-auto grid max-w-[1200px] items-center gap-12 px-5 lg:grid-cols-[0.9fr_1fr] lg:gap-20">
+    <img src="img/valoracion.webp" width="800" height="1000" loading="lazy" alt="Sillón dental blanco junto a una ventana en un consultorio luminoso (imagen ilustrativa)" class="order-2 aspect-[4/3] w-full rounded-[28px] object-cover lg:order-1 lg:aspect-[4/5]">
+    <div class="order-1 lg:order-2">
+      <p class="eyebrow">Primera visita</p>
+      <h2 class="h2 mt-4">Cómo es tu primera visita, en 3 pasos</h2>
+      <ol class="mt-10 space-y-0">
+        <li class="relative grid grid-cols-[44px_1fr] gap-x-5 pb-9">
+          <span class="absolute bottom-0 left-[21px] top-12 w-0.5 bg-brand/15" aria-hidden="true"></span>
+          <span class="grid h-11 w-11 place-items-center rounded-full bg-brand font-display text-[17px] font-semibold text-white">1</span>
+          <div class="pt-2">
+            <h3 class="h3">Escríbenos</h3>
+            <p class="mt-1 text-muted">Por WhatsApp o por teléfono. Cuéntanos qué te gustaría mejorar de tu sonrisa.</p>
           </div>
-          <p class="mt-6 text-sm text-marfil/60">Lunes a viernes · 8:00 am – 12:00 pm y 2:00 pm – 5:00 pm</p>
+        </li>
+        <li class="relative grid grid-cols-[44px_1fr] gap-x-5 pb-9">
+          <span class="absolute bottom-0 left-[21px] top-12 w-0.5 bg-brand/15" aria-hidden="true"></span>
+          <span class="grid h-11 w-11 place-items-center rounded-full bg-brand font-display text-[17px] font-semibold text-white">2</span>
+          <div class="pt-2">
+            <h3 class="h3">Cuadramos la cita</h3>
+            <p class="mt-1 text-muted">De lunes a viernes, en la mañana (8:00 am a 12:00 pm) o en la tarde (2:00 pm a 5:00 pm).</p>
+          </div>
+        </li>
+        <li class="grid grid-cols-[44px_1fr] gap-x-5">
+          <span class="grid h-11 w-11 place-items-center rounded-full bg-brand font-display text-[17px] font-semibold text-white">3</span>
+          <div class="pt-2">
+            <h3 class="h3">Conversamos y te revisamos</h3>
+            <p class="mt-1 text-muted">Revisamos tus dientes, te explicamos las opciones que aplican a tu caso y resolvemos tus dudas. Tú decides con calma.</p> <!-- CONFIRMAR: cómo es la valoración -->
+          </div>
+        </li>
+      </ol>
+      <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20valoraci%C3%B3n." class="btn btn-wa mt-10 w-full sm:w-auto"><svg class="icf"><use href="#i-wa"/></svg>Agendar mi valoración</a>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Preguntas frecuentes -->
+<section id="preguntas" class="bg-surface py-[72px] lg:py-[120px]">
+  <div class="mx-auto max-w-[800px] px-5">
+    <div class="text-center">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2 class="h2 mt-4">Lo que nos preguntan sobre estética dental</h2>
+    </div>
+    <div class="mt-10 divide-y divide-brand/10 rounded-[24px] bg-white px-5 shadow-card lg:mt-14 lg:px-8">
+      <details open>
+        <summary class="flex min-h-[64px] items-center justify-between gap-4 py-4 font-display text-[17px] font-medium text-deep lg:text-[19px]">¿Las carillas “sin desgaste” dañan mis dientes?<span class="grid h-9 w-9 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic plus h-5 w-5"><use href="#i-plus"/></svg></span></summary>
+        <p class="pb-6 text-[15px] leading-relaxed text-muted lg:text-[16px]">Se llaman así porque se colocan sin limar el diente. En la valoración revisamos tu caso y te explicamos si son una opción para ti.</p>
+      </details>
+      <details>
+        <summary class="flex min-h-[64px] items-center justify-between gap-4 py-4 font-display text-[17px] font-medium text-deep lg:text-[19px]">¿El blanqueamiento es para todo el mundo?<span class="grid h-9 w-9 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic plus h-5 w-5"><use href="#i-plus"/></svg></span></summary>
+        <p class="pb-6 text-[15px] leading-relaxed text-muted lg:text-[16px]">No siempre. Depende del estado de tus dientes y encías, y de lo que quieras lograr. Por eso primero te revisamos y te decimos con sinceridad si te conviene.</p>
+      </details>
+      <details>
+        <summary class="flex min-h-[64px] items-center justify-between gap-4 py-4 font-display text-[17px] font-medium text-deep lg:text-[19px]">¿Qué incluye un diseño de sonrisa?<span class="grid h-9 w-9 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic plus h-5 w-5"><use href="#i-plus"/></svg></span></summary>
+        <p class="pb-6 text-[15px] leading-relaxed text-muted lg:text-[16px]">Depende de cada persona. Puede combinar varios tratamientos, como carillas o blanqueamiento. En la valoración armamos contigo un plan y te explicamos cada paso.</p>
+      </details>
+      <details>
+        <summary class="flex min-h-[64px] items-center justify-between gap-4 py-4 font-display text-[17px] font-medium text-deep lg:text-[19px]">¿Cuánto cuesta?<span class="grid h-9 w-9 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic plus h-5 w-5"><use href="#i-plus"/></svg></span></summary>
+        <p class="pb-6 text-[15px] leading-relaxed text-muted lg:text-[16px]">Cada caso es distinto, así que el costo depende de lo que necesites. Escríbenos por WhatsApp y te damos la información actualizada.</p>
+      </details>
+      <details>
+        <summary class="flex min-h-[64px] items-center justify-between gap-4 py-4 font-display text-[17px] font-medium text-deep lg:text-[19px]">¿Dónde quedan y en qué horario atienden?<span class="grid h-9 w-9 flex-none place-items-center rounded-full bg-surface text-brand"><svg class="ic plus h-5 w-5"><use href="#i-plus"/></svg></span></summary>
+        <p class="pb-6 text-[15px] leading-relaxed text-muted lg:text-[16px]">En la Av. 20 con Calle 10, Centro Empresarial Leonardo Da Vinci, nivel 1, oficina 1, en el centro de Barquisimeto. Atendemos de lunes a viernes de 8:00 am a 12:00 pm y de 2:00 pm a 5:00 pm.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 9. Ubicación y horario -->
+<section id="ubicacion" class="bg-white py-[72px] lg:py-[120px]">
+  <div class="mx-auto max-w-[1200px] px-5">
+    <div class="max-w-[680px]">
+      <p class="eyebrow">Ubicación y horario</p>
+      <h2 class="h2 mt-4">En la Av.&nbsp;20 con Calle&nbsp;10, en pleno centro</h2>
+    </div>
+    <div class="relative mt-10 lg:mt-14">
+      <div class="relative h-[300px] overflow-hidden rounded-[24px] bg-surface lg:h-[620px] lg:rounded-[32px]">
+        <div class="absolute inset-0 grid place-items-center text-center lg:pr-[440px]">
+          <div class="px-6"><span class="mx-auto grid h-14 w-14 place-items-center rounded-full bg-white text-brand shadow-card"><svg class="ic h-7 w-7"><use href="#i-pin"/></svg></span><p class="mt-3 font-semibold text-deep">Centro Empresarial Leonardo Da Vinci</p><p class="text-[15px] text-muted">Av. 20 con Calle 10, Barquisimeto</p></div>
         </div>
-
-        <!-- Ilustración: proporción áurea + diente -->
-        <div class="relative mx-auto w-full max-w-sm md:max-w-md aspect-square" aria-hidden="true">
-          <svg viewBox="0 0 400 400" class="w-full h-full">
-            <defs>
-              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7f3ec"/><stop offset="1" stop-color="#e8dfcf"/></linearGradient>
-            </defs>
-            <circle cx="200" cy="200" r="178" fill="none" stroke="#d4b072" stroke-opacity=".35" stroke-width="1"/>
-            <circle cx="200" cy="200" r="132" fill="none" stroke="#d4b072" stroke-opacity=".25" stroke-width="1" stroke-dasharray="4 6"/>
-            <path d="M200 22 V378 M22 200 H378" stroke="#d4b072" stroke-opacity=".18"/>
-            <path d="M310 90 A110 110 0 0 1 200 200 A68 68 0 0 1 132 132 A42 42 0 0 1 174 90 A26 26 0 0 1 200 116" fill="none" stroke="#d4b072" stroke-width="1.5" stroke-opacity=".7"/>
-            <path d="M150 128c-22 0-36 18-36 40 0 27 14 45 18 72 4 23 9 40 22 40s14-27 22-45c4-9 10-14 24-14s20 5 24 14c8 18 9 45 22 45s18-17 22-40c4-27 18-45 18-72 0-22-14-40-36-40-18 0-27 9-50 9s-32-9-50-9z" fill="url(#g1)"/>
-            <path d="M166 150c-10 4-16 14-16 26" stroke="#ffffff" stroke-width="6" stroke-linecap="round" fill="none" opacity=".8"/>
-            <g fill="#d4b072"><circle cx="300" cy="120" r="3"/><circle cx="96" cy="290" r="2.5"/><circle cx="318" cy="300" r="2"/></g>
-          </svg>
-        </div>
+        <iframe title="Mapa: Grupo Odontológico Leonardo da Vinci, Av. 20 con Calle 10, Barquisimeto" src="https://maps.google.com/maps?q=Centro%20Empresarial%20Leonardo%20Da%20Vinci%2C%20Av.%2020%20con%20Calle%2010%2C%20Barquisimeto%2C%20Lara&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="absolute inset-0 h-full w-full border-0"></iframe>
       </div>
-    </section>
-
-    <!-- Servicios -->
-    <section id="servicios" class="max-w-6xl mx-auto px-5 py-20 md:py-28">
-      <div class="max-w-2xl">
-        <p class="text-xs font-semibold tracking-[.2em] uppercase text-oro-600">Servicios</p>
-        <h2 class="mt-3 font-serif text-3xl md:text-4xl font-semibold">Lo que hacemos por tu sonrisa</h2>
-        <p class="mt-4 text-pino-900/70">Tratamientos de estética dental pensados para que te veas y te sientas bien al sonreír.</p>
-      </div>
-      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <article class="bg-white rounded-3xl p-7 border border-pino-900/5 shadow-sm">
-          <div class="w-12 h-12 rounded-2xl bg-pino-50 text-pino-600 grid place-items-center"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 12c2 3 5 4.5 8 4.5s6-1.5 8-4.5M8 9h.01M16 9h.01"/><circle cx="12" cy="12" r="10"/></svg></div>
-          <h3 class="mt-5 font-serif text-xl font-semibold">Diseño de sonrisa</h3>
-          <p class="mt-2 text-pino-900/70 text-[15px]">Planificamos contigo la forma, el tamaño y el tono de tus dientes para lograr una sonrisa armónica con tu cara.</p>
-        </article>
-        <article class="bg-white rounded-3xl p-7 border border-pino-900/5 shadow-sm">
-          <div class="w-12 h-12 rounded-2xl bg-pino-50 text-pino-600 grid place-items-center"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg></div>
-          <h3 class="mt-5 font-serif text-xl font-semibold">Rehabilitación oral</h3>
-          <p class="mt-2 text-pino-900/70 text-[15px]">Recuperamos la función y la estética de tu boca para que vuelvas a masticar y sonreír con confianza.</p>
-        </article>
-        <article class="bg-white rounded-3xl p-7 border border-pino-900/5 shadow-sm">
-          <div class="w-12 h-12 rounded-2xl bg-pino-50 text-pino-600 grid place-items-center"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
-          <h3 class="mt-5 font-serif text-xl font-semibold">Blanqueamiento dental</h3>
-          <p class="mt-2 text-pino-900/70 text-[15px]">Aclaramos el tono de tus dientes para una sonrisa más luminosa.</p>
-        </article>
-        <article class="bg-white rounded-3xl p-7 border border-pino-900/5 shadow-sm">
-          <div class="w-12 h-12 rounded-2xl bg-pino-50 text-pino-600 grid place-items-center"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="5"/><path d="M9 9h6"/></svg></div>
-          <h3 class="mt-5 font-serif text-xl font-semibold">Carillas de resina sin desgaste</h3>
-          <p class="mt-2 text-pino-900/70 text-[15px]">Mejoramos la forma y el color de tus dientes con carillas de resina, sin desgaste dental.</p>
-        </article>
-        <article class="bg-white rounded-3xl p-7 border border-pino-900/5 shadow-sm sm:col-span-2 lg:col-span-1">
-          <div class="w-12 h-12 rounded-2xl bg-pino-50 text-pino-600 grid place-items-center"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-11a7 7 0 0 1 14 0c0 6.5-7 11-7 11z"/><path d="m9 11 2 2 4-4"/></svg></div>
-          <h3 class="mt-5 font-serif text-xl font-semibold">Tratamientos con esmalte dental</h3>
-          <p class="mt-2 text-pino-900/70 text-[15px]">Cuidamos y trabajamos el esmalte de tus dientes para protegerlos y mejorar su apariencia.</p> <!-- CONFIRMAR: descripción del tratamiento -->
-        </article>
-      </div>
-    </section>
-
-    <!-- Por qué elegirnos -->
-    <section id="por-que" class="bg-pino-50">
-      <div class="max-w-6xl mx-auto px-5 py-20 md:py-28 grid md:grid-cols-[1fr_1.4fr] gap-12">
-        <div>
-          <p class="text-xs font-semibold tracking-[.2em] uppercase text-oro-600">Por qué nosotros</p>
-          <h2 class="mt-3 font-serif text-3xl md:text-4xl font-semibold">Estética dental con criterio, cerca de ti</h2>
-        </div>
-        <ol class="space-y-8">
-          <li class="flex gap-5">
-            <span class="font-serif text-4xl text-oro-500 leading-none">01</span>
-            <div>
-              <h3 class="font-semibold text-lg">Especialistas en estética</h3>
-              <p class="mt-1 text-pino-900/70">Nos enfocamos en lo que mejor sabemos hacer: diseño de sonrisa y rehabilitación oral.</p>
-            </div>
-          </li>
-          <li class="flex gap-5">
-            <span class="font-serif text-4xl text-oro-500 leading-none">02</span>
-            <div>
-              <h3 class="font-semibold text-lg">Cuidamos tus dientes naturales</h3>
-              <p class="mt-1 text-pino-900/70">Trabajamos carillas de resina sin desgaste dental: mejoras tu sonrisa conservando lo tuyo.</p>
-            </div>
-          </li>
-          <li class="flex gap-5">
-            <span class="font-serif text-4xl text-oro-500 leading-none">03</span>
-            <div>
-              <h3 class="font-semibold text-lg">En el centro y a un mensaje</h3>
-              <p class="mt-1 text-pino-900/70">Estamos en el Centro Empresarial Leonardo Da Vinci, Av. 20 con Calle 10. Escríbenos por WhatsApp y te atendemos.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- Galería -->
-    <section id="galeria" class="max-w-6xl mx-auto px-5 py-20 md:py-28">
-      <div class="max-w-2xl">
-        <p class="text-xs font-semibold tracking-[.2em] uppercase text-oro-600">Galería</p>
-        <h2 class="mt-3 font-serif text-3xl md:text-4xl font-semibold">Sonrisas que hablan por nosotros</h2>
-      </div>
-      <!-- CONFIRMAR: reemplazar con fotos reales enviadas por la clínica -->
-      <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-        <img class="rounded-2xl w-full aspect-square object-cover" loading="lazy" src="https://placehold.co/600x600/12403f/d4b072?text=Antes+%2F+despu%C3%A9s%0Acarillas&font=playfair-display" alt="Foto antes y después de carillas de resina de un paciente (enviar por la clínica)">
-        <img class="rounded-2xl w-full aspect-square object-cover" loading="lazy" src="https://placehold.co/600x600/1d5e5b/f7f3ec?text=Antes+%2F+despu%C3%A9s%0Ablanqueamiento&font=playfair-display" alt="Foto antes y después de un blanqueamiento dental (enviar por la clínica)">
-        <img class="rounded-2xl w-full aspect-square object-cover" loading="lazy" src="https://placehold.co/600x600/c19a56/12403f?text=Consultorio&font=playfair-display" alt="Foto del consultorio o sillón dental de la clínica (enviar por la clínica)">
-        <img class="rounded-2xl w-full aspect-square object-cover" loading="lazy" src="https://placehold.co/600x600/0b2a29/d4b072?text=Equipo&font=playfair-display" alt="Foto del equipo de odontólogos de la clínica (enviar por la clínica)">
-      </div>
-    </section>
-
-    <!-- Ubicación y horario -->
-    <section id="ubicacion" class="bg-white border-y border-pino-900/5">
-      <div class="max-w-6xl mx-auto px-5 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-start">
-        <div>
-          <p class="text-xs font-semibold tracking-[.2em] uppercase text-oro-600">Visítanos</p>
-          <h2 class="mt-3 font-serif text-3xl md:text-4xl font-semibold">Ubicación y horario</h2>
-          <dl class="mt-8 space-y-6">
-            <div>
-              <dt class="text-sm font-semibold text-pino-600">Dirección</dt>
-              <dd class="mt-1">Av. 20 con Calle 10, Centro Empresarial Leonardo Da Vinci, Nivel 1, Ofic. 1, El Centro, Barquisimeto, Lara.</dd>
-            </div>
-            <div>
-              <dt class="text-sm font-semibold text-pino-600">Horario</dt>
-              <dd class="mt-1">Lunes a viernes<br>8:00 am – 12:00 pm y 2:00 pm – 5:00 pm</dd>
-            </div>
-            <div>
-              <dt class="text-sm font-semibold text-pino-600">Teléfonos</dt>
-              <dd class="mt-1">
-                WhatsApp: <a class="underline decoration-oro-500 underline-offset-4" href="https://wa.me/584245778159" target="_blank" rel="noopener">0424-577.8159</a><br>
-                Fijo: <a class="underline decoration-oro-500 underline-offset-4" href="tel:+582512514090">0251-251.4090</a>
-              </dd>
-            </div>
-          </dl>
-          <a href="https://www.google.com/maps/search/?api=1&query=Centro+Empresarial+Leonardo+Da+Vinci%2C+Av.+20+con+Calle+10%2C+Barquisimeto" target="_blank" rel="noopener" class="mt-8 inline-flex items-center gap-2 font-semibold text-pino-800 hover:text-pino-600">Cómo llegar en Google Maps →</a>
-        </div>
-        <div class="rounded-3xl overflow-hidden border border-pino-900/10 shadow-sm aspect-[4/3]">
-          <iframe title="Mapa de ubicación del Grupo Odontológico Leonardo da Vinci" class="w-full h-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Centro+Empresarial+Leonardo+Da+Vinci%2C+Av.+20+con+Calle+10%2C+Barquisimeto&z=17&output=embed"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA final -->
-    <section class="relative overflow-hidden bg-pino-900 text-marfil">
-      <div class="absolute inset-0 grano"></div>
-      <div class="relative max-w-3xl mx-auto px-5 py-20 md:py-24 text-center">
-        <h2 class="font-serif text-3xl md:text-5xl font-semibold leading-tight">¿Lista o listo para tu <em class="font-normal text-oro-400">nueva sonrisa</em>?</h2>
-        <p class="mt-5 text-marfil/75 text-lg">Cuéntanos qué te gustaría mejorar y te orientamos para agendar tu cita.</p>
-        <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" class="mt-9 inline-flex items-center gap-2.5 bg-oro-500 text-pino-900 font-bold px-8 py-4 rounded-full hover:bg-oro-400 transition">Agendar por WhatsApp</a>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-pino-900 text-marfil/70 border-t border-marfil/10">
-    <div class="max-w-6xl mx-auto px-5 py-10 flex flex-col md:flex-row gap-6 md:items-center md:justify-between text-sm">
-      <div>
-        <p class="font-serif text-marfil text-lg">Grupo Odontológico Leonardo da Vinci</p>
-        <p class="mt-1">Odontología estética · Barquisimeto, Venezuela</p>
-      </div>
-      <div class="flex gap-5">
-        <a href="https://www.instagram.com/goldavinci" target="_blank" rel="noopener" class="hover:text-oro-400">Instagram @goldavinci</a>
-        <a href="https://wa.me/584245778159" target="_blank" rel="noopener" class="hover:text-oro-400">WhatsApp</a>
+      <div class="mt-5 rounded-[24px] bg-white p-6 shadow-soft ring-1 ring-slate-100 lg:absolute lg:bottom-8 lg:right-8 lg:top-8 lg:mt-0 lg:flex lg:w-[400px] lg:flex-col lg:p-8">
+        <h3 class="h3">Dirección</h3>
+        <p class="mt-1 text-[15px] leading-relaxed text-muted">Av. 20 con Calle 10, Centro Empresarial Leonardo Da Vinci, nivel 1, oficina 1. El Centro, Barquisimeto.</p>
+        <h3 class="h3 mt-6 border-t border-slate-100 pt-6">Horario</h3>
+        <table class="mt-2 w-full text-[15px]">
+          <tr><td class="py-1 align-top text-muted">Lunes a viernes</td><td class="py-1 text-right font-semibold text-ink">8:00 am – 12:00 pm<br>2:00 pm – 5:00 pm</td></tr>
+        </table>
+        <h3 class="h3 mt-6 border-t border-slate-100 pt-6">Teléfonos</h3>
+        <a href="tel:+584245778159" class="lnk flex min-h-[44px] items-center justify-between gap-3 text-[15px]"><span class="text-muted">Celular y WhatsApp</span><span class="font-semibold text-ink">(0424) 577.8159</span></a>
+        <a href="tel:+582512514090" class="lnk flex min-h-[44px] items-center justify-between gap-3 text-[15px]"><span class="text-muted">Fijo</span><span class="font-semibold text-ink">(0251) 251.4090</span></a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Centro%20Empresarial%20Leonardo%20Da%20Vinci%2C%20Av.%2020%20con%20Calle%2010%2C%20Barquisimeto" class="btn btn-brand mt-6 w-full shrink-0 lg:mt-auto"><svg class="ic h-5 w-5"><use href="#i-nav"/></svg>Cómo llegar</a>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
+</main>
 
-  <!-- Botón flotante WhatsApp -->
-  <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp" class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white grid place-items-center shadow-xl shadow-black/25 hover:scale-105 transition">
-    <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
-  </a>
+<!-- 10. CTA final + pie -->
+<footer class="bg-deep text-white">
+  <div class="mx-auto max-w-[1200px] px-5 py-[72px] lg:py-[112px]">
+    <div class="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+      <div class="max-w-[620px]">
+        <div class="h-1 w-12 rounded-full bg-sky"></div>
+        <h2 class="h2 mt-6 text-white">Hablemos de tu sonrisa</h2>
+        <p class="mt-4 text-[#C9D1F0]">Escríbenos por WhatsApp y cuadramos tu valoración en el horario que mejor te quede.</p>
+      </div>
+      <div class="flex flex-col gap-3 sm:flex-row">
+        <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20valoraci%C3%B3n." class="btn btn-wa"><svg class="icf"><use href="#i-wa"/></svg>Escríbenos por WhatsApp</a>
+        <a href="tel:+584245778159" class="btn btn-line-light"><svg class="ic h-5 w-5"><use href="#i-phone"/></svg>Llamar</a>
+      </div>
+    </div>
+
+    <div class="mt-14 grid gap-10 border-t border-white/10 pt-12 md:grid-cols-3">
+      <div>
+        <div class="flex items-center gap-3">
+          <span class="grid h-10 w-10 place-items-center rounded-full bg-white font-display text-[15px] font-semibold text-brand">DV</span>
+          <span class="leading-tight"><span class="block font-display text-[17px] font-semibold">Leonardo da Vinci</span><span class="block text-[12px] text-[#C9D1F0]">Grupo Odontológico</span></span>
+        </div>
+        <p class="mt-4 max-w-[300px] text-[15px] text-[#C9D1F0]">Odontología estética: diseño de sonrisa y rehabilitación oral en el centro de Barquisimeto.</p>
+      </div>
+      <div class="space-y-1 text-[15px]">
+        <p class="mb-3 font-display text-[14px] font-medium text-sky">Contacto</p>
+        <p class="flex gap-3 pb-2 text-[#C9D1F0]"><svg class="ic mt-0.5 h-5 w-5 text-sky"><use href="#i-pin"/></svg>Av. 20 con Calle 10, C. E. Leonardo Da Vinci, nivel 1, ofic. 1. Barquisimeto.</p>
+        <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20valoraci%C3%B3n." class="lnk-light flex min-h-[44px] items-center gap-3 text-white"><svg class="icf h-5 w-5 text-sky"><use href="#i-wa"/></svg>(0424) 577.8159</a>
+        <a href="tel:+582512514090" class="lnk-light flex min-h-[44px] items-center gap-3 text-white"><svg class="ic h-5 w-5 text-sky"><use href="#i-phone"/></svg>(0251) 251.4090</a>
+        <a href="https://www.instagram.com/goldavinci/" class="lnk-light flex min-h-[44px] items-center gap-3 text-white"><svg class="ic h-5 w-5 text-sky"><use href="#i-ig"/></svg>@goldavinci</a>
+      </div>
+      <div class="text-[15px]">
+        <p class="mb-3 font-display text-[14px] font-medium text-sky">Horario</p>
+        <p class="text-[#C9D1F0]">Lunes a viernes</p>
+        <p class="font-semibold">8:00 am – 12:00 pm<br>2:00 pm – 5:00 pm</p>
+      </div>
+    </div>
+    <p class="mt-12 border-t border-white/10 pb-[80px] pt-6 text-[13px] text-[#B9C2E8] lg:pb-0">© 2026 Grupo Odontológico Leonardo da Vinci · Barquisimeto, Lara · Imágenes ilustrativas.</p>
+  </div>
+</footer>
+
+<!-- 11. Barra fija inferior (móvil) -->
+<div class="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 gap-2 border-t border-slate-200 bg-white/95 px-3 pt-2 backdrop-blur lg:hidden" style="padding-bottom:max(8px,env(safe-area-inset-bottom))">
+  <a href="https://wa.me/584245778159?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20agendar%20una%20valoraci%C3%B3n." class="btn btn-wa h-12 px-3"><svg class="icf h-5 w-5"><use href="#i-wa"/></svg>WhatsApp</a>
+  <a href="tel:+584245778159" class="btn btn-brand h-12 px-3"><svg class="ic h-5 w-5"><use href="#i-phone"/></svg>Llamar</a>
+</div>
+
 </body>
 </html>
